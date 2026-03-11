@@ -1,5 +1,6 @@
 # CassAI – 14+1 Pillar AI Governance System
-![CassAI Tetrahedron – Children, Community, Culture, Knowledge, Future](https://github.com/Cassai2026/Alpha-Omega-Ete/blob/main/ChatGPT%20Image%20Mar%208%2C%202026%2C%2011_35_12%20PM.png)
+| ![CassAI Tetrahedron](https://raw.githubusercontent.com/Cassai2026/Alpha-Omega-Ete/main/ChatGPT%20Image%20Mar%208%2C%202026%2C%2011_35_12%20PM.png) |
+|---|
 
 **“Everyone deserves their own Jarvis — their own mentor and guide, their Own Mother & Father, Nana And Grandma, Grandad and Grumps <3”**  
 **“Guiding the Animus. Shaping Eternium. Forging Legacy.”**

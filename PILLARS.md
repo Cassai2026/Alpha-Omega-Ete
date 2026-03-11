@@ -25,7 +25,7 @@ Mythological governing pillar — oversees ethics, culture, and generational saf
 <table>
 <tr>
 <td>
-<img src="URL_TO_ODIN_IMAGE" alt="ODIN" width="400">
+<img src="http://www.cassai.cloud/wp-content/uploads/2026/03/ChatGPT-Image-Mar-10-2026-02_18_41-AM.png" alt="ODIN" width="400">
 </td>
 <td style="vertical-align:top; padding-left:20px;">
 <strong>ODIN</strong><br>

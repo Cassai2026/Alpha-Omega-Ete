@@ -141,7 +141,44 @@ Every child deserves tools to build a better world
 
 Three types of people: those who care, those who do for those who care, and those who do for those that do
 
-🚀 Getting Started
+🎮 CassAI Code X>Y<Z – Gamified Psychology & Learning Universe
+
+CassAI Code X>Y<Z is a fully immersive AI-powered learning universe, designed for neurodivergent learners, mature students, and anyone exploring self-growth, choice, and consequence.
+
+Key Features
+
+Animus Framework: Player archetypes with cognitive, ethical, and behavioural profiles
+
+NeuroTrait Engine: 258 psychological traits for personal insight
+
+Tetrahedron Progression System: Adaptive learning nodes unlocking growth
+
+Life Simulation Engine: Safe fast-forward experience of real-world consequences
+
+Education Engine: Courses, modules, mentoring, and certification
+
+Community & Economy Engine: Personalised worlds, collaborative growth, and education funding
+
+GTA-style simulations: Safe exploration of consequences, empathy, and ethical decision-making
+
+AI Mentors: ODIN, KONG, HEKETE guide gameplay and personal development
+
+Getting Started
+git clone https://github.com/<yourusername>/CassAI-Code-X-Y-Z.git
+cd CassAI-Code-X-Y-Z
+pip install -r requirements.txt
+python main.py
+Repository Contents
+
+Animus & trait modules (animus_registry.py, shadow_traits.py)
+
+Tetrahedron & progression nodes
+
+Gamified life simulations and learning experiments
+
+Educational & research tools
+
+🚀 Getting Started – Core CassAI Repository
 Prerequisites
 
 Python 3.10+
@@ -155,26 +192,24 @@ git clone https://github.com/<yourusername>/CassAI.git
 cd CassAI
 pip install -r requirements.txt
 python main.py
-🤝 Contributing
+Contributing
 
-We welcome:
+Developers, educators, designers, researchers welcome
 
-Developers, AI researchers, educators, designers, systems engineers
+Fork → Branch → Pull Request
 
-Ways to help: AI modules, documentation, visualizations, educational tools
+Focus: AI modules, gamified learning, documentation, visualization
 
-Process: Fork → Branch → Pull Request
+🌍 Integration & Global Alignment
 
-📚 Integration & Global Alignment
+Open University Modules: Personalized adaptive learning & RPL recognition
 
-Open University Modules – adaptive learning & recognition of prior learning
-
-UN Sustainable Development Goals – Quality Education, Reduced Inequalities, Innovation & Infrastructure, Peace & Justice
+UN Sustainable Development Goals: Quality Education, Reduced Inequalities, Industry Innovation, Peace & Justice
 
 Websites: www.cassai.co.uk
 , www.cassai.cloud
 
-⚖️ License & IP
+⚖️ License & Intellectual Property
 
 Copyright: Paul Cassidy / CassAI Research Group
 
@@ -186,7 +221,7 @@ Commercial use prohibited without written permission
 
 Paul Cassidy
 Founder of CassAI Research Group
-Creator of KONG, ODIN, HEKETE educational AI systems for neurodivergent minds – Takiwatanga Style
+Creator of KONG, ODIN, HEKETE educational AI systems – Takiwatanga Style
 Architect of the 14-Pillar AI Governance System
 Author of Dimensional Human-Centered AI Governance, MISALIGNED, Misunderstood, and Mothered, and AuADHD
 
@@ -195,17 +230,17 @@ Websites: www.cassai.co.uk
 
 🖼️ Visual Assets
 
-/images/lilieth.png — Lilieth Pillar
+/images/lilieth.png — Mythological Pillar
 
 /images/odin.png — ODIN Layer
 
-/images/kong.png — KONG Knowledge Engine
+/images/kong.png — KONG Engine
 
 /images/hekete.png — HEKETE Layer
 
-/images/pillars_diagram.png — 14+1 Pillars Layout
+/images/pillars_diagram.png — 14+1 Pillars
 
-/images/tetrahedron.png — Children-centred Tetrahedron
+/images/tetrahedron.png — Children-centred tetrahedron
 
 CassAI — Open-source AI ecosystem for education, governance, and neurodivergent empowerment.
 “Everyone deserves their own Jarvis — their own mentor and guide.”

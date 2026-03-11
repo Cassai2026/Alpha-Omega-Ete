@@ -1,0 +1,496 @@
+{                                   
+
+  "version": "1.0",
+  "last_updated": "2026-03-08",
+  "system": "Animus Cognitive Framework",
+  "animus_entries": {
+    "Autocognitus": {
+      "title": "Strategic Thinker",
+      "class": "Strategist",
+      "mentor": "ODIN",
+      "description": "Highly analytical mind focused on systems, strategy and long-term problem solving.",
+      "category": "strategic",
+      "pillar_alignment": [
+        "Vision",
+        "Innovation"
+      ],
+      "strengths": [
+        "analysis",
+        "strategy",
+        "research",
+        "systems thinking"
+      ],
+      "xp_bonus": {
+        "type": "multiplier",
+        "value": 1.1,
+        "condition": "planning"
+      },
+      "xp_bonus_tasks": [
+        "coding",
+        "research",
+        "engineering",
+        "data analysis"
+      ],
+      "shadow_trait_interaction": "default",
+      "shadow_risk": [
+        "overthinking",
+        "impulsivity",
+        "overconfidence"
+      ],
+      "mentor_note": "Think before acting — what would your Animus do?"
+    },
+    "Cogniflux": {
+      "title": "Creative Problem-Solver",
+      "class": "Innovator",
+      "mentor": "KONG",
+      "description": "Fast-moving creative mind that excels in experimentation and invention.",
+      "category": "creative",
+      "pillar_alignment": [
+        "Innovation",
+        "Empowerment"
+      ],
+      "strengths": [
+        "innovation",
+        "rapid ideation",
+        "creative problem solving",
+        "experimentation"
+      ],
+      "xp_bonus": {
+        "type": "multiplier",
+        "value": 1.1,
+        "condition": "creative"
+      },
+      "xp_bonus_tasks": [
+        "prototyping",
+        "robotics",
+        "game design",
+        "invention"
+      ],
+      "shadow_trait_interaction": "default",
+      "shadow_risk": [
+        "impatience",
+        "scattered focus",
+        "unfinished projects"
+      ],
+      "mentor_note": "Creativity thrives when you reflect on your choices."
+    },
+    "SuiMens": {
+      "title": "Independent Innovator",
+      "class": "Maverick",
+      "mentor": "ODIN",
+      "description": "Self-driven innovator who forges their own path through challenges.",
+      "category": "strategic",
+      "pillar_alignment": [
+        "Empowerment",
+        "Resilience"
+      ],
+      "strengths": [
+        "independence",
+        "self-direction",
+        "unconventional thinking",
+        "resilience"
+      ],
+      "xp_bonus": {
+        "type": "flat",
+        "value": 0,
+        "condition": "none"
+      },
+      "xp_bonus_tasks": [
+        "solo projects",
+        "problem solving",
+        "leadership"
+      ],
+      "shadow_trait_interaction": "bypass_once",
+      "shadow_risk": [
+        "isolation",
+        "stubbornness",
+        "rejection of help"
+      ],
+      "mentor_note": "You bypass this shadow trait thanks to SuiMens ingenuity!"
+    },
+    "Virtumind": {
+      "title": "Skill & Craft Master",
+      "class": "Artisan",
+      "mentor": "KONG",
+      "description": "Dedicated craftsperson who builds mastery through patience and repetition.",
+      "category": "mastery",
+      "pillar_alignment": [
+        "Strengths-Based",
+        "Innovation"
+      ],
+      "strengths": [
+        "craftsmanship",
+        "precision",
+        "skill building",
+        "patience"
+      ],
+      "xp_bonus": {
+        "type": "flat",
+        "value": 5,
+        "condition": "collection"
+      },
+      "xp_bonus_tasks": [
+        "building",
+        "coding",
+        "arts",
+        "trades"
+      ],
+      "shadow_trait_interaction": "default",
+      "shadow_risk": [
+        "perfectionism",
+        "burnout",
+        "rigidity"
+      ],
+      "mentor_note": "Mastery is built one step at a time."
+    },
+    "Animora": {
+      "title": "Empathy Mentor",
+      "class": "Connector",
+      "mentor": "Hekete",
+      "description": "Social and emotional connector who builds communities and supports others.",
+      "category": "empathetic",
+      "pillar_alignment": [
+        "Empathy",
+        "Whanaungatanga"
+      ],
+      "strengths": [
+        "empathy",
+        "community building",
+        "guidance",
+        "social intelligence"
+      ],
+      "xp_bonus": {
+        "type": "flat",
+        "value": 3,
+        "condition": "reflection"
+      },
+      "xp_bonus_tasks": [
+        "mentoring",
+        "community projects",
+        "teaching",
+        "support roles"
+      ],
+      "shadow_trait_interaction": "default",
+      "shadow_risk": [
+        "self doubt",
+        "neglecting self",
+        "emotional overload"
+      ],
+      "mentor_note": "Feel what others feel — empathy is your superpower."
+    },
+    "Takwyn": {
+      "title": "Flow Master",
+      "class": "Harmoniser",
+      "mentor": "Hekete",
+      "description": "Finds rhythm in chaos and moves with natural flow and intuition.",
+      "category": "flow",
+      "pillar_alignment": [
+        "Takiwātanga",
+        "Resilience"
+      ],
+      "strengths": [
+        "flow state",
+        "intuition",
+        "adaptability",
+        "calm under pressure"
+      ],
+      "xp_bonus": {
+        "type": "flat",
+        "value": 0,
+        "condition": "none"
+      },
+      "xp_bonus_tasks": [
+        "meditation",
+        "sports",
+        "music",
+        "mindfulness"
+      ],
+      "shadow_trait_interaction": "default",
+      "shadow_risk": [
+        "passivity",
+        "avoidance",
+        "indecision"
+      ],
+      "special_ability": "double_move_once",
+      "mentor_note": "Flow is finding your rhythm — trust the process."
+    },
+    "Animundi": {
+      "title": "Big-Picture Thinker",
+      "class": "Visionary",
+      "mentor": "ODIN",
+      "description": "Sees connections others miss and thinks in systems and ecosystems.",
+      "category": "big-picture",
+      "pillar_alignment": [
+        "Vision",
+        "Kaitiakitanga"
+      ],
+      "strengths": [
+        "systems thinking",
+        "pattern recognition",
+        "holistic planning",
+        "foresight"
+      ],
+      "xp_bonus": {
+        "type": "flat",
+        "value": 0,
+        "condition": "none"
+      },
+      "xp_bonus_tasks": [
+        "strategy",
+        "environmental projects",
+        "planning"
+      ],
+      "shadow_trait_interaction": "default",
+      "shadow_risk": [
+        "detachment",
+        "overwhelm",
+        "neglecting details"
+      ],
+      "special_ability": "reveal_hidden_xp",
+      "mentor_note": "See the bigger picture — every choice connects."
+    },
+    "Chronoleap": {
+      "title": "Time Optimizer",
+      "class": "Tactician",
+      "mentor": "ODIN",
+      "description": "Masters timing and efficiency to overcome obstacles strategically.",
+      "category": "strategic",
+      "pillar_alignment": [
+        "Resilience",
+        "Vision"
+      ],
+      "strengths": [
+        "time management",
+        "efficiency",
+        "tactical thinking",
+        "prioritisation"
+      ],
+      "xp_bonus": {
+        "type": "flat",
+        "value": 0,
+        "condition": "none"
+      },
+      "xp_bonus_tasks": [
+        "planning",
+        "scheduling",
+        "project management"
+      ],
+      "shadow_trait_interaction": "default",
+      "shadow_risk": [
+        "impatience",
+        "rushing decisions",
+        "skipping reflection"
+      ],
+      "special_ability": "skip_obstacle_once",
+      "mentor_note": "Timing is everything — choose your moment wisely."
+    },
+    "Synthara": {
+      "title": "Pattern Recognizer",
+      "class": "Analyst",
+      "mentor": "ODIN",
+      "description": "Detects hidden patterns and reads situations before they unfold.",
+      "category": "strategic",
+      "pillar_alignment": [
+        "Ethical Reflection",
+        "Innovation"
+      ],
+      "strengths": [
+        "pattern recognition",
+        "data analysis",
+        "prediction",
+        "observation"
+      ],
+      "xp_bonus": {
+        "type": "flat",
+        "value": 0,
+        "condition": "none"
+      },
+      "xp_bonus_tasks": [
+        "research",
+        "data analysis",
+        "investigation"
+      ],
+      "shadow_trait_interaction": "detect_nearby",
+      "shadow_risk": [
+        "paranoia",
+        "over-analysis",
+        "distrust"
+      ],
+      "mentor_note": "Patterns are everywhere — read between the lines."
+    },
+    "Emberion": {
+      "title": "Adventurer",
+      "class": "Guardian",
+      "mentor": "KONG",
+      "description": "Resilient protector who faces challenges head-on with courage.",
+      "category": "resilience",
+      "pillar_alignment": [
+        "Resilience",
+        "Integrity"
+      ],
+      "strengths": [
+        "courage",
+        "endurance",
+        "protection",
+        "determination"
+      ],
+      "xp_bonus": {
+        "type": "flat",
+        "value": 0,
+        "condition": "none"
+      },
+      "xp_bonus_tasks": [
+        "physical challenges",
+        "community defence",
+        "leadership"
+      ],
+      "shadow_trait_interaction": "reduce_half",
+      "shadow_risk": [
+        "aggression",
+        "recklessness",
+        "burnout"
+      ],
+      "mentor_note": "Your Emberion resilience reduces the challenge!"
+    },
+    "Lumina": {
+      "title": "Emotional Intelligence",
+      "class": "Empath",
+      "mentor": "Hekete",
+      "description": "Deep emotional awareness that transforms reflection into growth.",
+      "category": "empathetic",
+      "pillar_alignment": [
+        "Empathy",
+        "Ethical Reflection"
+      ],
+      "strengths": [
+        "emotional awareness",
+        "reflection",
+        "compassion",
+        "self-regulation"
+      ],
+      "xp_bonus": {
+        "type": "flat",
+        "value": 5,
+        "condition": "reflection"
+      },
+      "xp_bonus_tasks": [
+        "journaling",
+        "mentoring",
+        "conflict resolution"
+      ],
+      "shadow_trait_interaction": "default",
+      "shadow_risk": [
+        "emotional overwhelm",
+        "people-pleasing",
+        "boundary issues"
+      ],
+      "mentor_note": "Emotional intelligence is the foundation of growth."
+    },
+    "Terranova": {
+      "title": "Environmental Thinker",
+      "class": "Steward",
+      "mentor": "KONG",
+      "description": "Protects and nurtures the environment and community around them.",
+      "category": "stewardship",
+      "pillar_alignment": [
+        "Kaitiakitanga",
+        "Community Leadership"
+      ],
+      "strengths": [
+        "environmental care",
+        "community service",
+        "nurturing",
+        "sustainability"
+      ],
+      "xp_bonus": {
+        "type": "flat",
+        "value": 5,
+        "condition": "helping"
+      },
+      "xp_bonus_tasks": [
+        "gardening",
+        "community projects",
+        "environmental work",
+        "volunteering"
+      ],
+      "shadow_trait_interaction": "default",
+      "shadow_risk": [
+        "martyrdom",
+        "neglecting self",
+        "eco-anxiety"
+      ],
+      "mentor_note": "The world grows when you help others grow."
+    },
+    "Noetica": {
+      "title": "Philosophical",
+      "class": "Philosopher",
+      "mentor": "ODIN",
+      "description": "Deep thinker who pauses to reflect before acting with purpose.",
+      "category": "big-picture",
+      "pillar_alignment": [
+        "Ethical Reflection",
+        "Vision"
+      ],
+      "strengths": [
+        "philosophical thinking",
+        "reflection",
+        "ethics",
+        "wisdom"
+      ],
+      "xp_bonus": {
+        "type": "flat",
+        "value": 0,
+        "condition": "none"
+      },
+      "xp_bonus_tasks": [
+        "debate",
+        "ethics",
+        "writing",
+        "philosophy"
+      ],
+      "shadow_trait_interaction": "default",
+      "shadow_risk": [
+        "overthinking",
+        "inaction",
+        "detachment"
+      ],
+      "special_ability": "pause_and_reflect",
+      "mentor_note": "Pause. Reflect. Then move with purpose."
+    },
+    "Aetherion": {
+      "title": "Visionary",
+      "class": "Oracle",
+      "mentor": "ODIN",
+      "description": "Sees beyond the present to unlock hidden paths and guidance.",
+      "category": "big-picture",
+      "pillar_alignment": [
+        "Vision",
+        "Global Inclusivity"
+      ],
+      "strengths": [
+        "vision",
+        "intuition",
+        "inspiration",
+        "future thinking"
+      ],
+      "xp_bonus": {
+        "type": "flat",
+        "value": 0,
+        "condition": "none"
+      },
+      "xp_bonus_tasks": [
+        "creative writing",
+        "strategy",
+        "visionary projects"
+      ],
+      "shadow_trait_interaction": "default",
+      "shadow_risk": [
+        "disconnection",
+        "unrealistic expectations",
+        "isolation"
+      ],
+      "special_ability": "unlock_hidden_guidance",
+      "mentor_note": "Vision sees what others cannot — trust your Animus."
+    }
+  }
+}

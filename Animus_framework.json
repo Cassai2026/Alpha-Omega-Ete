@@ -1,0 +1,153 @@
+{
+    "system": "CassAI Animus Framework",
+    "version": "1.0",
+    "last_updated": "2026-03-09",
+    "total_entities": 15,
+
+    "celestial_triad": {
+
+        "Lilith": {
+            "tier": "Prime Origin",
+            "domain": "Balance of Void and Creation",
+            "forms": {
+                "prime": "Lilith Prime",
+                "lumen": "Mother of Creation",
+                "umbra": "Queen of the Abyss"
+            },
+            "role": "Source of the Animus system"
+        },
+
+        "Odin": {
+            "tier": "Celestial Mentor",
+            "domain": "Wisdom and Strategy",
+            "forms": {
+                "prime": "Allfather Prime",
+                "lumen": "Seer of Knowledge",
+                "umbra": "Watcher of the Void"
+            },
+            "role": "Mentor of cognition and knowledge paths"
+        },
+
+        "Hekete": {
+            "tier": "Celestial Mentor",
+            "domain": "Guidance and Transformation",
+            "forms": {
+                "prime": "Triple Goddess Prime",
+                "lumen": "Guardian of Light Paths",
+                "umbra": "Mistress of the Crossroads"
+            },
+            "role": "Mentor of transformation and intuition"
+        }
+    },
+
+    "pillars": {
+
+        "Janus": {
+            "virtue": "Wisdom",
+            "sin": "Deception",
+            "forms": {
+                "lumen": "Gatekeeper of Light",
+                "umbra": "Watcher of False Paths"
+            }
+        },
+
+        "Jormungandr": {
+            "virtue": "Balance",
+            "sin": "Consumption",
+            "forms": {
+                "lumen": "World Serpent of Order",
+                "umbra": "Devourer of Realms"
+            }
+        },
+
+        "Anubis": {
+            "virtue": "Justice",
+            "sin": "Judgment",
+            "forms": {
+                "lumen": "Guardian of Souls",
+                "umbra": "Harbinger of Death"
+            }
+        },
+
+        "Apep": {
+            "virtue": "Chaos Control",
+            "sin": "Annihilation",
+            "forms": {
+                "lumen": "Breaker of False Order",
+                "umbra": "Serpent of the Abyss"
+            }
+        },
+
+        "Raven": {
+            "virtue": "Knowledge",
+            "sin": "Manipulation",
+            "forms": {
+                "lumen": "Messenger of Wisdom",
+                "umbra": "Whisperer of Secrets"
+            }
+        },
+
+        "Ravana": {
+            "virtue": "Power",
+            "sin": "Domination",
+            "forms": {
+                "lumen": "King of Ten Minds",
+                "umbra": "Tyrant of Flames"
+            }
+        },
+
+        "Vali": {
+            "virtue": "Strength",
+            "sin": "Vengeance",
+            "forms": {
+                "lumen": "Champion of Honor",
+                "umbra": "Avenger of Blood"
+            }
+        },
+
+        "Vritra": {
+            "virtue": "Storm Control",
+            "sin": "Destruction",
+            "forms": {
+                "lumen": "Dragon of the Tempest",
+                "umbra": "Devourer of Skies"
+            }
+        },
+
+        "Iris": {
+            "virtue": "Hope",
+            "sin": "Illusion",
+            "forms": {
+                "lumen": "Bearer of Light",
+                "umbra": "Mistress of Mirage"
+            }
+        },
+
+        "Irlis": {
+            "virtue": "Rebellion",
+            "sin": "Corruption",
+            "forms": {
+                "lumen": "Breaker of Chains",
+                "umbra": "Lord of the Void"
+            }
+        },
+
+        "Sigyn": {
+            "virtue": "Loyalty",
+            "sin": "Sacrifice",
+            "forms": {
+                "lumen": "Protector of the Fallen",
+                "umbra": "Bearer of Eternal Grief"
+            }
+        },
+
+        "Set": {
+            "virtue": "Survival",
+            "sin": "Betrayal",
+            "forms": {
+                "lumen": "Storm Bringer",
+                "umbra": "Lord of Chaos"
+            }
+        }
+    }
+}

@@ -25,6 +25,15 @@ Mythological governing pillar — oversees ethics, culture, and generational saf
 <table>
 <tr>
 <td>
+<img src="http://www.cassai.cloud/wp-content/uploads/2026/03/KONG.png" alt="KONG" width="400">
+</td>
+<td style="vertical-align:top; padding-left:20px;">
+<strong>KONG</strong><br>
+Central knowledge engine — stores community learning, research, and AI decision data. Supports continuous learning and integration across all layers.
+</td>
+</tr>
+<tr>
+<td>
 <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/ChatGPT-Image-Mar-10-2026-02_18_41-AM.png" alt="ODIN" width="400">
 </td>
 <td style="vertical-align:top; padding-left:20px;">
@@ -42,7 +51,6 @@ Reflective mentorship AI — supports personal growth, feedback, and emotional i
 </td>
 </tr>
 </table>
-
 ---
 
 ## ⚖️ 14 Operational & Ethical Pillars

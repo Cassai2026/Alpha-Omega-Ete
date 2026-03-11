@@ -34,7 +34,7 @@ Operational interface — logic, reasoning, task execution, and integration of R
 </tr>
 <tr>
 <td>
-<img src="URL_TO_HEKETE_IMAGE" alt="HEKETE" width="400">
+<img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Hekete-2.png" alt="HEKETE" width="400">
 </td>
 <td style="vertical-align:top; padding-left:20px;">
 <strong>HEKETE</strong><br>
@@ -50,14 +50,14 @@ Reflective mentorship AI — supports personal growth, feedback, and emotional i
 <table>
 <tr>
 <td>
-<img src="URL_TO_PILLAR1_IMAGE" alt="Pillar 1" width="300">
+<img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Janus.png" alt="Pillar 1" width="300">
 </td>
 <td style="vertical-align:top; padding-left:20px;">
 <strong>Janus</strong><br>
 Ethical duality — balances decision-making between morality and pragmatism.
 </td>
 <td>
-<img src="URL_TO_PILLAR2_IMAGE" alt="Pillar 2" width="300">
+<img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Jormungundr-1.png" alt="Pillar 2" width="300">
 </td>
 <td style="vertical-align:top; padding-left:20px;">
 <strong>Jormungandr</strong><br>
@@ -66,14 +66,14 @@ System equilibrium — ensures operational stability across AI layers.
 </tr>
 <tr>
 <td>
-<img src="URL_TO_PILLAR3_IMAGE" alt="Pillar 3" width="300">
+<img src="http://www.cassai.cloud/wp-content/uploads/2026/03/ChatGPT-Image-Mar-10-2026-01_42_10-AM.png" alt="Pillar 3" width="300">
 </td>
 <td style="vertical-align:top; padding-left:20px;">
 <strong>Anubis</strong><br>
 Fair enforcement — maintains justice and accountability.
 </td>
 <td>
-<img src="URL_TO_PILLAR4_IMAGE" alt="Pillar 4" width="300">
+<img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Apep.png)" alt="Pillar 4" width="300">
 </td>
 <td style="vertical-align:top; padding-left:20px;">
 <strong>Apep</strong><br>

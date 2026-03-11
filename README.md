@@ -4,7 +4,7 @@
 
 **“Guiding the Animus. Shaping Eternium. Forging Legacy.”**
 
-CassAI is a **human-centred, community-integrated AI governance framework**, designed to **empower neurodivergent learners, preserve culture, and foster ethical AI systems**. Built over decades, CassAI combines **AI infrastructure, educational innovation, and mythological philosophy** into a coherent ecosystem.
+CassAI is a **human-centred, community-integrated AI governance framework**, designed to **empower neurodivergent learners, preserve culture, and foster ethical AI systems**. Built over decades, CassAI combines **AI infrastructure, educational innovation, mythological philosophy, and gamified learning** into a coherent ecosystem.
 
 ---
 
@@ -15,7 +15,7 @@ CassAI is structured around **15 pillars**:
 - **1 Mythological Governing Pillar:** **Lilieth** — oversees ethics, culture, and generational safeguarding.  
 - **14 Operational & Ethical Pillars:** Janus, Jormungandr, Anubis, Apep, Raven, Ravana, Vali, Vritra, Iris, Iglis, Sigyn, Set, **ODIN**, and **HEKETE**.  
 
-These pillars are guided by a **push-pull ethical framework**: **7 virtues + 7 sins**, ensuring every AI decision balances **ethics, human welfare, and societal impact**.
+The pillars are guided by a **push-pull ethical framework**: **7 virtues + 7 sins**, balancing every AI decision across **ethics, human welfare, and societal impact**.
 
 ---
 
@@ -84,7 +84,7 @@ These pillars are guided by a **push-pull ethical framework**: **7 virtues + 7 s
      M-----S
         |
         E∞
-Symbol	Meaning
+        Symbol	Meaning
 αᵢ	AI development & research
 M	Machines / infrastructure
 S	Systems & software
@@ -123,24 +123,6 @@ Void Wolf — cosmic energy
 
 Ice Wolf — cyan-frost highlights
 
-📜 Manifesto Lines
-
-I am, I can; I don’t, I won’t
-
-Mental health is your real wealth
-
-Kids design their futures; we safeguard their present
-
-CassAI is owned by the children of the future, not grown-ups of the past
-
-Technology must serve humanity, not replace it
-
-Innovation begins when someone asks “Why not?”
-
-Every child deserves tools to build a better world
-
-Three types of people: those who care, those who do for those who care, and those who do for those that do
-
 🎮 CassAI Code X>Y<Z – Gamified Psychology & Learning Universe
 
 CassAI Code X>Y<Z is a fully immersive AI-powered learning universe, designed for neurodivergent learners, mature students, and anyone exploring self-growth, choice, and consequence.
@@ -163,20 +145,35 @@ GTA-style simulations: Safe exploration of consequences, empathy, and ethical de
 
 AI Mentors: ODIN, KONG, HEKETE guide gameplay and personal development
 
-Getting Started
-git clone https://github.com/<yourusername>/CassAI-Code-X-Y-Z.git
-cd CassAI-Code-X-Y-Z
-pip install -r requirements.txt
-python main.py
-Repository Contents
+🏘️ Community Tech Server Hubs
 
-Animus & trait modules (animus_registry.py, shadow_traits.py)
+Local Hubs: Servers in local communities providing free Wi-Fi, gaming, and access to educational modules
 
-Tetrahedron & progression nodes
+Purpose: Give children, students, and adults equal access to technology and learning
 
-Gamified life simulations and learning experiments
+Integration: Funds from in-game purchases are reinvested into:
 
-Educational & research tools
+CIC-controlled academic trusts
+
+Users’ future education and scholarships
+
+Game development and ecosystem growth
+
+🌍 Global Mission – From CIC to NGO
+
+CIC Structure:
+
+Local CICs manage educational trusts, community resources, and reinvestment of funds
+
+Ensures all profits go into community education, infrastructure, and development
+
+NGO Vision:
+
+Scale internationally to build fair, safe infrastructure worldwide
+
+Fund community tech hubs, education, and local development
+
+Align with UN Sustainable Development Goals (Quality Education, Reduced Inequalities, Industry Innovation, Peace & Justice)
 
 🚀 Getting Started – Core CassAI Repository
 Prerequisites
@@ -200,22 +197,17 @@ Fork → Branch → Pull Request
 
 Focus: AI modules, gamified learning, documentation, visualization
 
-🌍 Integration & Global Alignment
-
-Open University Modules: Personalized adaptive learning & RPL recognition
-
-UN Sustainable Development Goals: Quality Education, Reduced Inequalities, Industry Innovation, Peace & Justice
-
-Websites: www.cassai.co.uk
-, www.cassai.cloud
-
 ⚖️ License & Intellectual Property
 
+CassAI Code X>Y<Z is licensed under Apache 2.0, with ethical governance principles:
+
+Open-source for research, education, and community development
+
+Contributions must align with human-centred governance and neurodivergent inclusion
+
+Commercial exploitation requires explicit written permission
+
 Copyright: Paul Cassidy / CassAI Research Group
-
-Usage: Research, Education, Community Development
-
-Commercial use prohibited without written permission
 
 ✉️ Contact & Founder
 

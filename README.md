@@ -1,6 +1,7 @@
 # CassAI – 14+1 Pillar AI Governance System
 
 **“Guiding the Animus. Shaping Eternium. Forging Legacy.”**
+**“Everyone deserves their own Jarvis — their own mentor and guide, their Own Mother & Father, Nana And Grandma, Grandad and Grumps <3"**
 
 CassAI is a human-centred, community-integrated AI governance framework, designed to empower neurodivergent learners, preserve culture, and foster ethical AI systems. Built over decades, CassAI combines AI infrastructure, educational innovation, mythological philosophy, and gamified learning into a coherent ecosystem.
 

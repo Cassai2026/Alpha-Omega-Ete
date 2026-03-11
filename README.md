@@ -4,132 +4,208 @@
 
 **“Guiding the Animus. Shaping Eternium. Forging Legacy.”**
 
-CassAI is a **human-centered, community-integrated AI governance framework**, designed to **empower the next generation, preserve culture, and foster ethical AI learning systems**. It combines **mythological philosophy, educational innovation, and AI infrastructure** into a coherent open-source ecosystem.
+CassAI is a **human-centred, community-integrated AI governance framework**, designed to **empower neurodivergent learners, preserve culture, and foster ethical AI systems**. Built over decades, CassAI combines **AI infrastructure, educational innovation, and mythological philosophy** into a coherent ecosystem.
 
 ---
 
-## Overview
+## 🌟 Overview
 
 CassAI is structured around **15 pillars**:
 
-- **1 Mythological Governing Pillar:** **Lilieth** — supreme overseer guiding ethical alignment, generational safeguarding, and cultural wisdom.  
-- **14 Canonical Operational Pillars:** Janus, Jormungandr, Anubis, Apep, Raven, Ravana, Vali, Vritra, Iris, Iglis, Sigyn, Set, **ODIN**, and **HEKETE**.  
+- **1 Mythological Governing Pillar:** **Lilieth** — oversees ethics, culture, and generational safeguarding.  
+- **14 Operational & Ethical Pillars:** Janus, Jormungandr, Anubis, Apep, Raven, Ravana, Vali, Vritra, Iris, Iglis, Sigyn, Set, **ODIN**, and **HEKETE**.  
 
-These pillars are supported by a **push-pull ethical framework**: **7 virtues + 7 sins**, ensuring AI decisions remain balanced, ethical, and human-centered.
-
----
-
-## Philosophical Foundation — 7 Virtues + 7 Sins
-
-| Virtue (Push) | Sin (Pull) |
-|---------------|------------|
-| Prudence | Rashness |
-| Justice | Injustice |
-| Temperance | Gluttony |
-| Courage | Fear |
-| Faith | Despair |
-| Hope | Despair / Nihilism |
-| Charity / Love | Indifference |
-
-- Each AI decision is dynamically evaluated along this spectrum.  
-- Ensures **ethical equilibrium** for operational and community decisions.  
-- Lilieth oversees the system to maintain **human-centered alignment**.
+These pillars are guided by a **push-pull ethical framework**: **7 virtues + 7 sins**, ensuring every AI decision balances **ethics, human welfare, and societal impact**.
 
 ---
 
-## Balance / Equilibrium Layer
+## ⚖️ Philosophical Foundation
 
-Each pillar evaluates the **push (virtue) vs pull (sin)** to guide AI governance:
+### 7 Virtues (Push Forces)
+1. Prudence — wise planning and foresight  
+2. Justice — fairness and balance  
+3. Temperance — moderation and self-control  
+4. Courage — ethical action despite fear  
+5. Faith — trust in system and human values  
+6. Hope — optimism and positive outcomes  
+7. Charity / Love — empathy and nurturing growth  
 
-| Pillar | Virtue | Sin | Balance Focus |
-|--------|--------|-----|---------------|
-| Janus | Wisdom | Deception | Duality, ethical decision-making |
-| Jormungandr | Balance | Consumption | System equilibrium, control excess |
-| Anubis | Justice | Injustice | Fair enforcement, protection |
-| Apep | Courage | Fear | Calculated risk-taking, safeguarding |
+### 7 Sins (Pull Forces)
+1. Pride — arrogance, overconfidence  
+2. Envy — dissatisfaction, comparison  
+3. Wrath — aggression, reactive behavior  
+4. Sloth — inaction, stagnation  
+5. Greed — self-interest over collective good  
+6. Gluttony — excess, lack of restraint  
+7. Lust — distraction, misused focus  
+
+**Mechanism:** Each AI action is evaluated along the virtue-sin spectrum, maintaining **dynamic ethical equilibrium**.
+
+---
+
+## 🛡️ Operational Pillars
+
+| Pillar | Virtue | Sin | Focus |
+|--------|--------|-----|-------|
+| Janus | Wisdom | Deception | Ethical duality |
+| Jormungandr | Balance | Consumption | System equilibrium |
+| Anubis | Justice | Injustice | Fair enforcement |
+| Apep | Courage | Fear | Calculated risk-taking |
 | Raven | Prudence | Rashness | Knowledge-informed caution |
-| Ravana | Knowledge | Ignorance | Informed choices, prevent blind spots |
+| Ravana | Knowledge | Ignorance | Prevent blind spots |
 | Vali | Strength | Weakness | Operational stability |
-| Vritra | Resilience | Fragility | System endurance under stress |
-| Iris | Charity / Empathy | Indifference | Community-centric outcomes |
+| Vritra | Resilience | Fragility | Endurance under stress |
+| Iris | Charity / Empathy | Indifference | Community outcomes |
 | Iglis | Temperance | Gluttony | Resource moderation |
-| Sigyn | Protection | Neglect | Safeguarding humans and systems |
-| Set | Stability | Tyranny | Operational control, order |
-| ODIN | Faith / Hope | Despair | Real-world learning, cultural integration |
-| HEKETE | Reflection | Blindness | Feedback, ethical monitoring |
+| Sigyn | Protection | Neglect | Safeguarding humans & systems |
+| Set | Stability | Tyranny | Operational order |
+| ODIN | Faith / Hope | Despair | Real-world learning |
+| HEKETE | Reflection | Blindness | Feedback & ethical monitoring |
 
 ---
 
-## Operational Layers
+## 🧠 AI Layers
 
-- **ODIN:** Real-world learning, open culture, RWL/RCL/REL, community integration.  
-- **HEKETE:** Reflective feedback, monitoring, ethics, and human satisfaction.  
-- **KONG:** Central knowledge repository for learning data, decisions, and operational insights.
+- **Lilieth:** Ethical overseer, culture, and generational safeguarding  
+- **ODIN:** Logic, reasoning, task execution, RWL/RCL/REL integration  
+- **HEKETE:** Reflective mentorship, feedback, emotional intelligence  
+- **KONG:** Central knowledge engine for community, learning, and AI decisions  
 
----
-
-## Terra / Primal Titans — Elemental Layer
-
-**7 Elemental Primal Titans (Dragonkin / Mythic Forms):**
-
-| Element | Name | Concept |
-|---------|------|---------|
-| Fire | Blazion / Ifrit Ignited | Half-drake, half-phoenix, molten scales, regenerative flames |
-| Earth | Iridikron / Terragon Titan | Colossal rock giant, crystal armor, terrain manipulation |
-| Wind | Summt / Zephyra Eagle | Giant white eagle, storm control, aerial dominance |
-| Water | Hydryss / Leviathan God | Hydra-seagod hybrid, tidal currents, adaptive combat |
-| Light | Soladrake / Vali-Janus-Anubis Fusion | Radiant wings, purification beam, healing aura |
-| Shadow | Umbryx / Council of 7 Sins | Multi-headed shadow dragon, fear and stealth manipulation |
-| Void | Aethragon / Void Lord | Cosmic dragon, space-time control, elemental integration |
-
-- **Each Titan can evolve through forms:** Alpha → Omega → Ultima → Eternium.
+**Flow:** Inputs → Virtue/Sin evaluation → Operational AI → Feedback → Continuous Learning
 
 ---
 
-## Lilieth — Primal Celestials
+## 🔺 Tetrahedron Model
 
-**8 Wolf-Based Primal Celestials:**
+```text
+        αᵢ
+       / \
+      /   \
+     M-----S
+        |
+        E∞
+Symbol	Meaning
+αᵢ	AI development & research
+M	Machines / infrastructure
+S	Systems & software
+Σ	Collective knowledge
+E∞	The evolving CassAI ecosystem
 
-1. Fire Wolf — molten, embered fur  
-2. Earth Wolf — crystal-armored, rocky textures  
-3. Wind Wolf — feathered neon streaks  
-4. Water Wolf — hydralike, tidal energy  
-5. Light Wolf — radiant, luminous wings  
-6. Shadow Wolf — dark, multi-shadow tails  
-7. Void Wolf — cosmic, starry, void energy  
-8. Ice Wolf — frost-white, ice crystals, cyan neon highlights  
+Represents the interaction of AI research, infrastructure, software, and knowledge.
 
----
+🌐 Terra / Primal Titans
+Element	Name	Concept
+Fire	Blazion / Ifrit	Molten scales, regenerative flames
+Earth	Iridikron / Terragon	Crystal armor, terrain manipulation
+Wind	Summt / Zephyra	Aerial dominance, storm control
+Water	Hydryss / Leviathan	Adaptive tidal currents
+Light	Soladrake	Radiant wings, healing aura
+Shadow	Umbryx	Multi-shadow stealth & fear
+Void	Aethragon	Cosmic dragon, space-time control
 
-## Forms & Progression
+Form progression: Alpha → Omega → Ultima → Eternium
 
-- **Alpha Form:** Base elemental form  
-- **Omega Form:** Humanoid-beast hybrid  
-- **Ultima Form:** Armored, weapons, full elemental mastery  
-- **Eternium Form:** Godlike, cosmic, ultimate power  
+🐺 Lilieth – Primal Celestials
 
----
+Fire Wolf — molten embers
 
-## Philosophy & Manifesto
+Earth Wolf — crystal-armored
 
-- **Child-Centric Governance:** Protect and empower future generations  
-- **Culture + Community + Technology:** Triad for societal balance  
-- **Transparency & Auditability:** Open, verifiable processes  
-- **Dynamic Ethical Evolution:** Governance adapts to society and technology  
+Wind Wolf — neon-feathered
 
-**Key Manifesto Lines:**
+Water Wolf — tidal energy
 
-- I am, I can; I don’t, I won’t  
-- Mental health is your real wealth  
-- CassAI is owned by the children of the future, not grown-ups of the past  
-- Technology must serve humanity, not replace it  
-- Innovation begins when someone asks, “Why not?”  
-- Learning never ends; it evolves  
+Light Wolf — radiant wings
 
----
+Shadow Wolf — multi-shadow tails
 
-## Installation & Usage
+Void Wolf — cosmic energy
 
-```bash
-git clone https://github.com/yourusername/CassAI.git
-cd CassAI# Alpha-Omega-Ete
+Ice Wolf — cyan-frost highlights
+
+📜 Manifesto Lines
+
+I am, I can; I don’t, I won’t
+
+Mental health is your real wealth
+
+Kids design their futures; we safeguard their present
+
+CassAI is owned by the children of the future, not grown-ups of the past
+
+Technology must serve humanity, not replace it
+
+Innovation begins when someone asks “Why not?”
+
+Every child deserves tools to build a better world
+
+Three types of people: those who care, those who do for those who care, and those who do for those that do
+
+🚀 Getting Started
+Prerequisites
+
+Python 3.10+
+
+Node.js / React (dashboards & visualizations)
+
+Optional: Unity / Unreal (VR / AR educational prototypes)
+
+Installation
+git clone https://github.com/<yourusername>/CassAI.git
+cd CassAI
+pip install -r requirements.txt
+python main.py
+🤝 Contributing
+
+We welcome:
+
+Developers, AI researchers, educators, designers, systems engineers
+
+Ways to help: AI modules, documentation, visualizations, educational tools
+
+Process: Fork → Branch → Pull Request
+
+📚 Integration & Global Alignment
+
+Open University Modules – adaptive learning & recognition of prior learning
+
+UN Sustainable Development Goals – Quality Education, Reduced Inequalities, Innovation & Infrastructure, Peace & Justice
+
+Websites: www.cassai.co.uk
+, www.cassai.cloud
+
+⚖️ License & IP
+
+Copyright: Paul Cassidy / CassAI Research Group
+
+Usage: Research, Education, Community Development
+
+Commercial use prohibited without written permission
+
+✉️ Contact & Founder
+
+Paul Cassidy
+Founder of CassAI Research Group
+Creator of KONG, ODIN, HEKETE educational AI systems for neurodivergent minds – Takiwatanga Style
+Architect of the 14-Pillar AI Governance System
+Author of Dimensional Human-Centered AI Governance, MISALIGNED, Misunderstood, and Mothered, and AuADHD
+
+Websites: www.cassai.co.uk
+, www.cassai.cloud
+
+🖼️ Visual Assets
+
+/images/lilieth.png — Lilieth Pillar
+
+/images/odin.png — ODIN Layer
+
+/images/kong.png — KONG Knowledge Engine
+
+/images/hekete.png — HEKETE Layer
+
+/images/pillars_diagram.png — 14+1 Pillars Layout
+
+/images/tetrahedron.png — Children-centred Tetrahedron
+
+CassAI — Open-source AI ecosystem for education, governance, and neurodivergent empowerment.
+“Everyone deserves their own Jarvis — their own mentor and guide.”

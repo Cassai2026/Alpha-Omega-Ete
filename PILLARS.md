@@ -82,14 +82,14 @@ Calculated risk-taking — courage to act ethically under uncertainty.
 </tr>
 <tr>
 <td>
-<img src="URL_TO_PILLAR5_IMAGE" alt="Pillar 5" width="300">
+<img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Raven1.png" alt="Pillar 5" width="300">
 </td>
 <td style="vertical-align:top; padding-left:20px;">
 <strong>Raven</strong><br>
 Knowledge-informed caution — prudence in AI and community decisions.
 </td>
 <td>
-<img src="URL_TO_PILLAR6_IMAGE" alt="Pillar 6" width="300">
+<img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Ravana.png" alt="Pillar 6" width="300">
 </td>
 <td style="vertical-align:top; padding-left:20px;">
 <strong>Ravana</strong><br>
@@ -98,14 +98,14 @@ Prevents blind spots — integrates knowledge and research.
 </tr>
 <tr>
 <td>
-<img src="URL_TO_PILLAR7_IMAGE" alt="Pillar 7" width="300">
+<img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Vali-2.png)" alt="Pillar 7" width="300">
 </td>
 <td style="vertical-align:top; padding-left:20px;">
 <strong>Vali</strong><br>
 Operational stability — ensures AI system strength.
 </td>
 <td>
-<img src="URL_TO_PILLAR8_IMAGE" alt="Pillar 8" width="300">
+<img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Vritra.png" alt="Pillar 8" width="300">
 </td>
 <td style="vertical-align:top; padding-left:20px;">
 <strong>Vritra</strong><br>
@@ -114,14 +114,14 @@ Endurance under stress — resilience in AI operations.
 </tr>
 <tr>
 <td>
-<img src="URL_TO_PILLAR9_IMAGE" alt="Pillar 9" width="300">
+<img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Iris.png" alt="Pillar 9" width="300">
 </td>
 <td style="vertical-align:top; padding-left:20px;">
 <strong>Iris</strong><br>
 Community outcomes — charity, empathy, and ethical impact.
 </td>
 <td>
-<img src="URL_TO_PILLAR10_IMAGE" alt="Pillar 10" width="300">
+<img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Iblis-2.png" alt="Pillar 10" width="300">
 </td>
 <td style="vertical-align:top; padding-left:20px;">
 <strong>Iglis</strong><br>
@@ -130,14 +130,14 @@ Resource moderation — balances temperance and efficiency.
 </tr>
 <tr>
 <td>
-<img src="URL_TO_PILLAR11_IMAGE" alt="Pillar 11" width="300">
+<img src="http://www.cassai.cloud/wp-content/uploads/2026/03/ChatGPT-Image-Mar-10-2026-02_05_23-AM.png" alt="Pillar 11" width="300">
 </td>
 <td style="vertical-align:top; padding-left:20px;">
 <strong>Sigyn</strong><br>
 Safeguards humans and systems — protection against neglect.
 </td>
 <td>
-<img src="URL_TO_PILLAR12_IMAGE" alt="Pillar 12" width="300">
+<img src="http://www.cassai.cloud/wp-content/uploads/2026/03/ChatGPT-Image-Mar-10-2026-02_13_39-AM.png" alt="Pillar 12" width="300">
 </td>
 <td style="vertical-align:top; padding-left:20px;">
 <strong>Set</strong><br>

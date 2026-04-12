@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CassAI – The Mirrored Tetrahedral Governance Ecosystem</title>
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:        #07080f;
+      --surface:   #0d1021;
+      --surface2:  #121630;
+      --accent1:   #7c5cfc;
+      --accent2:   #00d4c8;
+      --accent3:   #f7c948;
+      --text:      #e8eaf6;
+      --muted:     #8e90b4;
+      --radius:    14px;
+      --gap:       2rem;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: var(--accent2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; border-radius: var(--radius); display: block; }
+    h1, h2, h3, h4 { line-height: 1.25; }
+
+    /* ── Utilities ── */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+    .badge {
+      display: inline-block;
+      background: rgba(124,92,252,.18);
+      border: 1px solid rgba(124,92,252,.4);
+      color: var(--accent1);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: .25rem .75rem;
+      border-radius: 999px;
+      margin-bottom: .75rem;
+    }
+    .section { padding: 5rem 0; }
+    .section-title {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    .section-sub {
+      color: var(--muted);
+      max-width: 640px;
+      margin-bottom: 3rem;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,.06);
+      margin: 0;
+    }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(7,8,15,.88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,.05);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px; gap: 1rem;
+    }
+    .nav-logo {
+      font-size: 1.2rem; font-weight: 800;
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      white-space: nowrap;
+    }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a { color: var(--muted); font-size: .9rem; font-weight: 600; transition: color .2s; }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+    @media (max-width: 640px) { .nav-links { display: none; } }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative; overflow: hidden;
+      padding: 7rem 0 6rem;
+      text-align: center;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(124,92,252,.22) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 80% 80%, rgba(0,212,200,.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .hero-tag { margin-bottom: 1.5rem; }
+    .hero h1 {
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 900;
+      background: linear-gradient(135deg, #fff 30%, var(--accent1) 70%, var(--accent2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      margin-bottom: 1.25rem;
+    }
+    .hero p {
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+      color: var(--muted);
+      max-width: 660px; margin: 0 auto 2.5rem;
+    }
+    .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: .75rem 1.75rem;
+      border-radius: 999px; font-weight: 700; font-size: .95rem;
+      cursor: pointer; transition: transform .15s, box-shadow .15s;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.4); text-decoration: none; }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent1), #5b3fcc);
+      color: #fff;
+    }
+    .btn-outline {
+      border: 1.5px solid rgba(255,255,255,.2);
+      color: var(--text);
+      background: transparent;
+    }
+    .manifesto-quote {
+      margin: 3rem auto 0;
+      max-width: 560px;
+      font-style: italic;
+      color: var(--accent3);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    /* ── Stat strip ── */
+    .stats-strip {
+      background: var(--surface);
+      border-top: 1px solid rgba(255,255,255,.05);
+      border-bottom: 1px solid rgba(255,255,255,.05);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0;
+    }
+    .stat-item {
+      text-align: center; padding: 1.75rem 1rem;
+      border-right: 1px solid rgba(255,255,255,.05);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-size: 2.2rem; font-weight: 900;
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .stat-label { color: var(--muted); font-size: .82rem; margin-top: .2rem; }
+
+    /* ── Architecture ── */
+    .arch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+    .arch-card {
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      transition: border-color .2s, transform .2s;
+    }
+    .arch-card:hover { border-color: var(--accent1); transform: translateY(-3px); }
+    .arch-icon {
+      font-size: 2rem; margin-bottom: .75rem;
+    }
+    .arch-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: .5rem; }
+    .arch-card p { color: var(--muted); font-size: .92rem; }
+    .arch-card ul { color: var(--muted); font-size: .88rem; padding-left: 1.2rem; margin-top: .5rem; }
+    .arch-card ul li { margin-bottom: .2rem; }
+
+    /* ── Tetrahedron visual ── */
+    .tetra-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+    @media (max-width: 700px) { .tetra-wrap { grid-template-columns: 1fr; } }
+    .tetra-box {
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+    }
+    .tetra-box h3 {
+      font-size: 1rem; font-weight: 700; margin-bottom: 1rem;
+      color: var(--accent2);
+    }
+    .tetra-nodes { display: flex; flex-direction: column; gap: .6rem; }
+    .node {
+      display: flex; align-items: center; gap: .75rem;
+      background: rgba(255,255,255,.03);
+      border-radius: 8px; padding: .6rem .9rem;
+    }
+    .node-dot {
+      width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+    }
+    .dot-purple { background: var(--accent1); }
+    .dot-teal   { background: var(--accent2); }
+    .dot-gold   { background: var(--accent3); }
+    .dot-red    { background: #f76c6c; }
+    .node-name  { font-weight: 700; font-size: .9rem; }
+    .node-desc  { color: var(--muted); font-size: .82rem; margin-top: .1rem; }
+
+    /* ── Lilieth feature ── */
+    .lilieth-wrap {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    @media (max-width: 800px) { .lilieth-wrap { grid-template-columns: 1fr; } }
+    .lilieth-img img {
+      width: 100%;
+      border: 2px solid rgba(124,92,252,.35);
+      box-shadow: 0 0 60px rgba(124,92,252,.2);
+    }
+    .lilieth-content .section-title { margin-bottom: .75rem; }
+    .lilieth-content p { color: var(--muted); margin-bottom: 1rem; }
+
+    /* ── AI Layers ── */
+    .ai-layers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .ai-card {
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: border-color .2s, transform .2s;
+    }
+    .ai-card:hover { border-color: var(--accent1); transform: translateY(-4px); }
+    .ai-card-img { height: 220px; overflow: hidden; }
+    .ai-card-img img { width: 100%; height: 100%; object-fit: cover; border-radius: 0; }
+    .ai-card-body { padding: 1.25rem 1.5rem; }
+    .ai-card-body h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: .4rem; }
+    .ai-card-body p { color: var(--muted); font-size: .9rem; }
+
+    /* ── Pillars grid ── */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+    .pillar-card {
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: flex; flex-direction: column;
+      transition: border-color .2s, transform .2s;
+    }
+    .pillar-card:hover { border-color: var(--accent2); transform: translateY(-3px); }
+    .pillar-card-img { height: 200px; overflow: hidden; }
+    .pillar-card-img img { width: 100%; height: 100%; object-fit: cover; border-radius: 0; }
+    .pillar-card-body { padding: 1rem 1.1rem; flex: 1; }
+    .pillar-card-body h3 { font-size: 1rem; font-weight: 800; margin-bottom: .25rem; }
+    .pillar-virtue { font-size: .78rem; color: var(--accent2); font-weight: 700; margin-bottom: .15rem; }
+    .pillar-sin { font-size: .78rem; color: #f76c6c; font-weight: 700; margin-bottom: .4rem; }
+    .pillar-desc { color: var(--muted); font-size: .85rem; }
+
+    /* ── 4D Framework ── */
+    .framework-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+    }
+    .fw-card {
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: var(--radius);
+      padding: 1.6rem;
+    }
+    .fw-card .fw-label {
+      font-size: .72rem; font-weight: 800; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--accent3);
+      margin-bottom: .5rem;
+    }
+    .fw-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .4rem; }
+    .fw-card p { color: var(--muted); font-size: .88rem; }
+
+    /* ── Manifesto ── */
+    .manifesto-section { background: var(--surface); }
+    .manifesto-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+      list-style: none;
+    }
+    .manifesto-list li {
+      background: var(--surface2);
+      border-left: 3px solid var(--accent1);
+      border-radius: 0 8px 8px 0;
+      padding: .9rem 1.1rem;
+      font-size: .9rem;
+      color: var(--text);
+      font-style: italic;
+    }
+
+    /* ── Ethics ── */
+    .ethics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+    .ethics-card {
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+    }
+    .ethics-card h3 { font-size: .95rem; font-weight: 700; margin-bottom: .4rem; color: var(--accent2); }
+    .ethics-card p { color: var(--muted); font-size: .88rem; }
+
+    /* ── Licensing ── */
+    .lic-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    @media (max-width: 600px) { .lic-row { grid-template-columns: 1fr; } }
+    .lic-card {
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+    }
+    .lic-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .5rem; }
+    .lic-card p { color: var(--muted); font-size: .88rem; }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid rgba(255,255,255,.06);
+      padding: 3rem 0 2rem;
+    }
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2rem;
+    }
+    @media (max-width: 640px) { .footer-inner { grid-template-columns: 1fr; } }
+    .footer-brand h2 {
+      font-size: 1.4rem; font-weight: 900; margin-bottom: .5rem;
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .footer-brand p { color: var(--muted); font-size: .88rem; max-width: 320px; }
+    .footer-col h4 { font-size: .85rem; font-weight: 700; margin-bottom: .75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .07em; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: .4rem; }
+    .footer-col ul li a { color: var(--muted); font-size: .88rem; }
+    .footer-col ul li a:hover { color: var(--text); text-decoration: none; }
+    .footer-bottom {
+      margin-top: 2.5rem; padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,.05);
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem;
+    }
+    .footer-bottom p { color: var(--muted); font-size: .8rem; }
+  </style>
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav>
+  <div class="container nav-inner">
+    <span class="nav-logo">CassAI ⬡</span>
+    <ul class="nav-links">
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#pillars">Pillars</a></li>
+      <li><a href="#framework">4D Framework</a></li>
+      <li><a href="#manifesto">Manifesto</a></li>
+      <li><a href="#ethics">Ethics</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-tag">
+      <span class="badge">Human-Centred AI Governance</span>
+    </div>
+    <h1>The Mirrored Tetrahedral<br>Governance Ecosystem</h1>
+    <p>
+      A 4-Dimensional, trauma-aware AI governance model designed to replace rigid,
+      binary, compliance-first systems with adaptive, neurodivergent-first infrastructure.
+    </p>
+    <div class="hero-btns">
+      <a href="https://www.cassai.cloud" target="_blank" class="btn btn-primary">Visit CassAI Cloud</a>
+      <a href="https://github.com/Cassai2026/Alpha-Omega-Ete" target="_blank" class="btn btn-outline">View on GitHub</a>
+    </div>
+    <p class="manifesto-quote">
+      "Adults build the infrastructure. Future generations benefit. No one extracts."
+    </p>
+  </div>
+</section>
+
+<!-- ── Stats ── -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item"><div class="stat-num">14</div><div class="stat-label">Governance Pillars</div></div>
+      <div class="stat-item"><div class="stat-num">4</div><div class="stat-label">AI Mentors</div></div>
+      <div class="stat-item"><div class="stat-num">252</div><div class="stat-label">Trait Variants</div></div>
+      <div class="stat-item"><div class="stat-num">126</div><div class="stat-label">Pillar Abilities</div></div>
+      <div class="stat-item"><div class="stat-num">42</div><div class="stat-label">Progression Forms</div></div>
+      <div class="stat-item"><div class="stat-num">8</div><div class="stat-label">Ecosystem Nodes</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Architecture ── -->
+<section class="section" id="architecture">
+  <div class="container">
+    <span class="badge">Architecture</span>
+    <h2 class="section-title">The Mirrored Tetrahedron</h2>
+    <p class="section-sub">
+      An 8-point dual-ecosystem that does not govern top-down — it orbits the human.
+      Every node serves the individual while strengthening the collective.
+    </p>
+
+    <!-- Animus centre -->
+    <div class="arch-grid" style="margin-bottom:3rem;">
+      <div class="arch-card" style="border-color:rgba(247,201,72,.25); grid-column: span 1;">
+        <div class="arch-icon">🌀</div>
+        <h3>ANIMUS — The Centre</h3>
+        <p>
+          The zero-point. The system translates the neurodivergent cognitive state so the
+          user can interface with the world safely and effectively. Every layer orbits this human core.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tetrahedra -->
+    <div class="tetra-wrap">
+      <div class="tetra-box">
+        <h3>🔺 Top Tetrahedron — Digital / Cognitive Support</h3>
+        <div class="tetra-nodes">
+          <div class="node">
+            <span class="node-dot dot-purple"></span>
+            <div><div class="node-name">Lilieth</div><div class="node-desc">Ethics &amp; Safeguarding — guiding presence across all layers</div></div>
+          </div>
+          <div class="node">
+            <span class="node-dot dot-teal"></span>
+            <div><div class="node-name">ODIN</div><div class="node-desc">Action &amp; Execution — strategy, logic, task integration</div></div>
+          </div>
+          <div class="node">
+            <span class="node-dot dot-teal"></span>
+            <div><div class="node-name">HEKETE</div><div class="node-desc">Reflection &amp; Audit — transformation, intuition, feedback</div></div>
+          </div>
+          <div class="node">
+            <span class="node-dot dot-teal"></span>
+            <div><div class="node-name">KONG</div><div class="node-desc">Technology &amp; Compute — central knowledge engine, infrastructure</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="tetra-box">
+        <h3>🔻 Bottom Tetrahedron — Physical / Community</h3>
+        <div class="tetra-nodes">
+          <div class="node">
+            <span class="node-dot dot-gold"></span>
+            <div><div class="node-name">CassAI Research</div><div class="node-desc">Intellectual &amp; governance core</div></div>
+          </div>
+          <div class="node">
+            <span class="node-dot dot-red"></span>
+            <div><div class="node-name">The WorX</div><div class="node-desc">Commercial &amp; engineering implementation engine</div></div>
+          </div>
+          <div class="node">
+            <span class="node-dot dot-red"></span>
+            <div><div class="node-name">ReWorX</div><div class="node-desc">Systems reform, material reuse &amp; regeneration</div></div>
+          </div>
+          <div class="node">
+            <span class="node-dot dot-red"></span>
+            <div><div class="node-name">CommunityWorX</div><div class="node-desc">Social support, digital inclusion &amp; community implementation</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── Lilieth Feature ── -->
+<section class="section">
+  <div class="container">
+    <div class="lilieth-wrap">
+      <div class="lilieth-img">
+        <img
+          src="http://www.cassai.cloud/wp-content/uploads/2026/03/Lilieth.png"
+          alt="Lilieth — Mythological Governing Pillar"
+          loading="lazy"
+        />
+      </div>
+      <div class="lilieth-content">
+        <span class="badge">Mythological Governing Pillar</span>
+        <h2 class="section-title">Lilieth</h2>
+        <p>
+          The Prime Origin — absolute balance between void and creation. Lilieth oversees
+          ethics, culture, and generational safeguarding. She guides all pillars below, ensuring
+          that every decision, system action, and deployment protects the children of the future.
+        </p>
+        <p>
+          As both the Celestial Mentor and mythological capstone, Lilieth operates across every
+          layer of the CassAI ecosystem — from technical governance to community-level safeguarding.
+        </p>
+        <a href="#pillars" class="btn btn-primary" style="margin-top:.5rem;">Explore All Pillars</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── AI Layers ── -->
+<section class="section">
+  <div class="container">
+    <span class="badge">AI Layers</span>
+    <h2 class="section-title">The Three Mentor AIs</h2>
+    <p class="section-sub">
+      Each mentor AI governs a distinct cognitive domain — together they wrap the
+      digital support layer around the ANIMUS user.
+    </p>
+    <div class="ai-layers-grid">
+      <div class="ai-card">
+        <div class="ai-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/KONG.png" alt="KONG" loading="lazy" />
+        </div>
+        <div class="ai-card-body">
+          <h3>KONG — The Alpha</h3>
+          <p>
+            Central knowledge engine. Stores community learning, research, and AI decision data.
+            Direct, action-oriented guide focused on execution, building, and physical mastery.
+            Governs: Apep, Ravana, Vali, Vritra, Set.
+          </p>
+        </div>
+      </div>
+      <div class="ai-card">
+        <div class="ai-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/ChatGPT-Image-Mar-10-2026-02_18_41-AM.png" alt="ODIN" loading="lazy" />
+        </div>
+        <div class="ai-card-body">
+          <h3>ODIN — The Allfather</h3>
+          <p>
+            Operational interface for logic, reasoning, and task execution. Strategic, structured mentor
+            integrating real-world learning (RWL/RCL/REL). Governs: Janus, Jormungandr, Anubis, Raven.
+          </p>
+        </div>
+      </div>
+      <div class="ai-card">
+        <div class="ai-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Hekete-2.png" alt="HEKETE" loading="lazy" />
+        </div>
+        <div class="ai-card-body">
+          <h3>HEKETE — The Triple Goddess</h3>
+          <p>
+            Reflective mentorship AI supporting personal growth, feedback, and emotional intelligence.
+            Governs transformation, intuition, and ethical pathways. Governs: Iris, Iblis, Sigyn.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── Pillars ── -->
+<section class="section" id="pillars">
+  <div class="container">
+    <span class="badge">14+1 Governance System</span>
+    <h2 class="section-title">The Operational &amp; Ethical Pillars</h2>
+    <p class="section-sub">
+      Twelve mythology-inspired pillars plus two personal pillars, each carrying a virtue/sin duality,
+      three progression forms, and 18 trait variants.
+    </p>
+    <div class="pillars-grid">
+
+      <div class="pillar-card">
+        <div class="pillar-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Janus.png" alt="Janus" loading="lazy" />
+        </div>
+        <div class="pillar-card-body">
+          <h3>Janus</h3>
+          <div class="pillar-virtue">✦ Virtue: Wisdom</div>
+          <div class="pillar-sin">⚡ Sin: Deception</div>
+          <p class="pillar-desc">Ethical duality — balances decision-making between morality and pragmatism.</p>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Jormungundr-1.png" alt="Jormungandr" loading="lazy" />
+        </div>
+        <div class="pillar-card-body">
+          <h3>Jormungandr</h3>
+          <div class="pillar-virtue">✦ Virtue: Balance</div>
+          <div class="pillar-sin">⚡ Sin: Consumption</div>
+          <p class="pillar-desc">System equilibrium — ensures operational stability across all AI layers.</p>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/ChatGPT-Image-Mar-10-2026-01_42_10-AM.png" alt="Anubis" loading="lazy" />
+        </div>
+        <div class="pillar-card-body">
+          <h3>Anubis</h3>
+          <div class="pillar-virtue">✦ Virtue: Justice</div>
+          <div class="pillar-sin">⚡ Sin: Judgment</div>
+          <p class="pillar-desc">Fair enforcement — maintains justice and accountability throughout the system.</p>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Apep.png" alt="Apep" loading="lazy" />
+        </div>
+        <div class="pillar-card-body">
+          <h3>Apep</h3>
+          <div class="pillar-virtue">✦ Virtue: Chaos Control</div>
+          <div class="pillar-sin">⚡ Sin: Annihilation</div>
+          <p class="pillar-desc">Calculated risk-taking — the courage to act ethically under uncertainty.</p>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Raven1.png" alt="Raven" loading="lazy" />
+        </div>
+        <div class="pillar-card-body">
+          <h3>Raven</h3>
+          <div class="pillar-virtue">✦ Virtue: Knowledge</div>
+          <div class="pillar-sin">⚡ Sin: Manipulation</div>
+          <p class="pillar-desc">Knowledge-informed caution — prudence in AI and community decisions.</p>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Ravana.png" alt="Ravana" loading="lazy" />
+        </div>
+        <div class="pillar-card-body">
+          <h3>Ravana</h3>
+          <div class="pillar-virtue">✦ Virtue: Power</div>
+          <div class="pillar-sin">⚡ Sin: Domination</div>
+          <p class="pillar-desc">Prevents blind spots — integrates diverse knowledge and research perspectives.</p>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Vali-2.png" alt="Vali" loading="lazy" />
+        </div>
+        <div class="pillar-card-body">
+          <h3>Vali</h3>
+          <div class="pillar-virtue">✦ Virtue: Strength</div>
+          <div class="pillar-sin">⚡ Sin: Vengeance</div>
+          <p class="pillar-desc">Operational stability — ensures AI system strength and resilience.</p>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Vritra.png" alt="Vritra" loading="lazy" />
+        </div>
+        <div class="pillar-card-body">
+          <h3>Vritra</h3>
+          <div class="pillar-virtue">✦ Virtue: Storm Control</div>
+          <div class="pillar-sin">⚡ Sin: Destruction</div>
+          <p class="pillar-desc">Endurance under stress — resilience in AI operations through adversity.</p>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Iris.png" alt="Iris" loading="lazy" />
+        </div>
+        <div class="pillar-card-body">
+          <h3>Iris</h3>
+          <div class="pillar-virtue">✦ Virtue: Hope</div>
+          <div class="pillar-sin">⚡ Sin: Illusion</div>
+          <p class="pillar-desc">Community outcomes — charity, empathy, and ethical impact.</p>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Iblis-2.png" alt="Iblis" loading="lazy" />
+        </div>
+        <div class="pillar-card-body">
+          <h3>Iblis</h3>
+          <div class="pillar-virtue">✦ Virtue: Rebellion</div>
+          <div class="pillar-sin">⚡ Sin: Corruption</div>
+          <p class="pillar-desc">Resource moderation — balances temperance and efficiency.</p>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/ChatGPT-Image-Mar-10-2026-02_05_23-AM.png" alt="Sigyn" loading="lazy" />
+        </div>
+        <div class="pillar-card-body">
+          <h3>Sigyn</h3>
+          <div class="pillar-virtue">✦ Virtue: Loyalty</div>
+          <div class="pillar-sin">⚡ Sin: Sacrifice</div>
+          <p class="pillar-desc">Safeguards humans and systems — protection against neglect.</p>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/ChatGPT-Image-Mar-10-2026-02_13_39-AM.png" alt="Set" loading="lazy" />
+        </div>
+        <div class="pillar-card-body">
+          <h3>Set</h3>
+          <div class="pillar-virtue">✦ Virtue: Survival</div>
+          <div class="pillar-sin">⚡ Sin: Betrayal</div>
+          <p class="pillar-desc">Operational order — stability and structure in the AI system.</p>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Pillar13.png" alt="Pillar 13" loading="lazy" />
+        </div>
+        <div class="pillar-card-body">
+          <h3>ODIN (Pillar)</h3>
+          <div class="pillar-virtue">✦ Faith &amp; Hope</div>
+          <p class="pillar-desc">Supports real-world learning integration and forward momentum.</p>
+        </div>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-card-img">
+          <img src="http://www.cassai.cloud/wp-content/uploads/2026/03/Pillar14.png" alt="Pillar 14" loading="lazy" />
+        </div>
+        <div class="pillar-card-body">
+          <h3>HEKETE (Pillar)</h3>
+          <div class="pillar-virtue">✦ Reflection</div>
+          <p class="pillar-desc">Ethical monitoring and continuous feedback loops across the system.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── 4D Framework ── -->
+<section class="section" id="framework">
+  <div class="container">
+    <span class="badge">Governance</span>
+    <h2 class="section-title">The 4D Governance Framework</h2>
+    <p class="section-sub">
+      CassAI operates across four dimensions simultaneously — ensuring technology
+      serves humanity at every layer of society.
+    </p>
+    <div class="framework-grid">
+      <div class="fw-card">
+        <div class="fw-label">Dimension 1 — Technical (2D)</div>
+        <h3>On-Premise AI Infrastructure</h3>
+        <p>Localized AI cluster architecture prioritizing privacy and community control over remote cloud dependency.</p>
+      </div>
+      <div class="fw-card">
+        <div class="fw-label">Dimension 2 — Institutional (3D)</div>
+        <h3>Systems &amp; Academic Reform</h3>
+        <p>Integrated academic and systems reform, bypassing traditional institutional silos to deliver real change.</p>
+      </div>
+      <div class="fw-card">
+        <div class="fw-label">Dimension 3 — Human</div>
+        <h3>Trauma-Informed Design</h3>
+        <p>Neurodivergent-first design that adapts to continuous, multidimensional human states rather than binary thresholds.</p>
+      </div>
+      <div class="fw-card">
+        <div class="fw-label">Dimension 4 — Generational (4D)</div>
+        <h3>Self-Sustaining Knowledge</h3>
+        <p>A self-sustaining knowledge ecosystem where local surplus builds the future workforce — no extraction, only growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── Manifesto ── -->
+<section class="section manifesto-section" id="manifesto">
+  <div class="container">
+    <span class="badge">Our Manifesto</span>
+    <h2 class="section-title">What We Believe</h2>
+    <p class="section-sub">The principles that drive every line of code, every decision, and every community action.</p>
+    <ul class="manifesto-list">
+      <li>I am, I can. I don't, I won't.</li>
+      <li>Mental health is your real wealth.</li>
+      <li>We let the kids design their futures whilst we safeguard their presents.</li>
+      <li>CassAI is owned by the children of the future, not the grown-ups of the past.</li>
+      <li>We don't reward fitting in — we reward making things better.</li>
+      <li>Technology must serve humanity, not replace it.</li>
+      <li>Culture is our foundation, not our obstacle.</li>
+      <li>Knowledge grows when it is shared, not hoarded.</li>
+      <li>Community is stronger than competition.</li>
+      <li>The future is built by the curious.</li>
+      <li>Innovation begins when someone asks "why not?"</li>
+      <li>Learning never ends — it evolves.</li>
+      <li>Every child deserves the tools to build a better world.</li>
+      <li>Everyone deserves their own Jarvis — their own mentor and guide.</li>
+    </ul>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── Ethics ── -->
+<section class="section" id="ethics">
+  <div class="container">
+    <span class="badge">Ethical Use</span>
+    <h2 class="section-title">Principles of Ethical Use</h2>
+    <p class="section-sub">
+      CassAI is more than software — it is a human-centred governance system.
+      These principles are non-negotiable.
+    </p>
+    <div class="ethics-grid">
+      <div class="ethics-card">
+        <h3>Child-Centric Governance</h3>
+        <p>All use must prioritize the welfare, development, and learning opportunities of children and future generations.</p>
+      </div>
+      <div class="ethics-card">
+        <h3>Culture &amp; Community Preservation</h3>
+        <p>The system must respect, preserve, and enhance local and cultural knowledge rather than overwrite or replace it.</p>
+      </div>
+      <div class="ethics-card">
+        <h3>Neurodivergent-Inclusive Design</h3>
+        <p>CassAI is intended to be inclusive of cognitive diversity and must not marginalize neurodivergent individuals.</p>
+      </div>
+      <div class="ethics-card">
+        <h3>Transparency &amp; Accountability</h3>
+        <p>All deployments and modifications must be documented clearly to maintain trust, reproducibility, and accountability.</p>
+      </div>
+      <div class="ethics-card">
+        <h3>Non-Commercial Principle</h3>
+        <p>Intended primarily for research, education, and community development. Commercial use requires explicit written permission.</p>
+      </div>
+      <div class="ethics-card">
+        <h3>Virtue-Sin Ethical Framework</h3>
+        <p>AI actions maintain balance across the 7 Virtues and 7 Sins — ensuring holistic, grounded decision-making at every layer.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:3rem;">
+      <span class="badge">Licensing</span>
+      <h2 class="section-title" style="margin-bottom:1.25rem;">Dual-License Agreement</h2>
+      <div class="lic-row">
+        <div class="lic-card">
+          <h3>📄 Codebase — GNU AGPLv3</h3>
+          <p>
+            If you modify and run this code on a network, you <strong>must</strong> open-source your
+            modifications under the same license. No private forks of the technical implementation.
+          </p>
+        </div>
+        <div class="lic-card">
+          <h3>📚 Governance IP — CC BY-NC 4.0</h3>
+          <p>
+            Documentation and governance frameworks are non-commercial use only.
+            You may not use this material for corporate profit without explicit written permission.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h2>CassAI ⬡</h2>
+        <p>
+          A 4-Dimensional, neurodivergent-first AI governance ecosystem.
+          Built for the children of the future. &copy; 2026 Paul Cassidy / CassAI Research Group.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://www.cassai.co.uk" target="_blank">cassai.co.uk</a></li>
+          <li><a href="https://www.cassai.cloud" target="_blank">cassai.cloud</a></li>
+          <li><a href="https://github.com/Cassai2026/Alpha-Omega-Ete" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Ecosystem</h4>
+        <ul>
+          <li><a href="#architecture">Architecture</a></li>
+          <li><a href="#pillars">Pillars</a></li>
+          <li><a href="#framework">4D Framework</a></li>
+          <li><a href="#manifesto">Manifesto</a></li>
+          <li><a href="#ethics">Ethics</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        Codebase: GNU AGPLv3 &nbsp;|&nbsp; Governance IP: CC BY-NC 4.0 &nbsp;|&nbsp;
+        &copy; 2026 Paul Cassidy / CassAI Research Group
+      </p>
+      <p>
+        <a href="https://www.cassai.co.uk" target="_blank">www.cassai.co.uk</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

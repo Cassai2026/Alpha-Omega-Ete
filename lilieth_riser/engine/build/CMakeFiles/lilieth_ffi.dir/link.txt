@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/lilieth_ffi.dir/link.d -shared -Wl,-soname,liblilieth_ffi.so -o liblilieth_ffi.so CMakeFiles/lilieth_ffi.dir/src/ffi_bridge.cpp.o

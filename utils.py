@@ -1,5 +1,5 @@
 # -----------------------------
-# Eternius Animus — Shared Utilities
+# Eternius Animus â€” Shared Utilities
 #
 # Common helpers used across modules:
 #   - Display formatting
@@ -60,7 +60,7 @@ def get_choice(prompt, min_val, max_val):
         max_val: Maximum valid choice (inclusive).
 
     Returns:
-        int — the validated choice.
+        int â€” the validated choice.
     """
     while True:
         try:
@@ -98,7 +98,7 @@ def get_text_input(prompt, allow_empty=False):
         allow_empty: If True, accepts empty string.
 
     Returns:
-        str — the player's input.
+        str â€” the player's input.
     """
     while True:
         raw = input(prompt).strip()
@@ -122,10 +122,10 @@ def render_grid(grid_size, player_pos, xp_positions=None, shadow_positions=None)
         .  = empty cell
 
     Parameters:
-        grid_size:        int — width and height of the grid.
-        player_pos:       [row, col] — current player position.
-        xp_positions:     list of [row, col] — XP token locations.
-        shadow_positions: list of [row, col] — shadow trait locations.
+        grid_size:        int â€” width and height of the grid.
+        player_pos:       [row, col] â€” current player position.
+        xp_positions:     list of [row, col] â€” XP token locations.
+        shadow_positions: list of [row, col] â€” shadow trait locations.
     """
     if xp_positions is None:
         xp_positions = []

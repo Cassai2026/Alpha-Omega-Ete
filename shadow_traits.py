@@ -1,6 +1,6 @@
 # -----------------------------
-# Eternius Animus — Shadow Traits Data Module
-# 14 Pillars × 18 traits each = 252 traits total
+# Eternius Animus â€” Shadow Traits Data Module
+# 14 Pillars Ã— 18 traits each = 252 traits total
 #
 # Structure per pillar:
 #   light:
@@ -15,7 +15,7 @@
 
 PILLAR_TRAITS = {
 
-    # ===== 1. JANUS — Wisdom / Deception =====
+    # ===== 1. JANUS â€” Wisdom / Deception =====
     "Janus": {
         "virtue": "Wisdom",
         "sin": "Deception",
@@ -55,7 +55,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 2. JORMUNGANDR — Balance / Consumption =====
+    # ===== 2. JORMUNGANDR â€” Balance / Consumption =====
     "Jormungandr": {
         "virtue": "Balance",
         "sin": "Consumption",
@@ -95,7 +95,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 3. ANUBIS — Justice / Judgment =====
+    # ===== 3. ANUBIS â€” Justice / Judgment =====
     "Anubis": {
         "virtue": "Justice",
         "sin": "Judgment",
@@ -111,7 +111,7 @@ PILLAR_TRAITS = {
                 {"name": "guardian_vigilance",  "description": "Watching over the vulnerable with tireless dedication."},
             ],
             "ascended": [
-                {"name": "scales_of_maat",     "description": "Perfect cosmic justice — truth weighed against the feather."},
+                {"name": "scales_of_maat",     "description": "Perfect cosmic justice â€” truth weighed against the feather."},
                 {"name": "death_passage_guide", "description": "Guiding souls through their darkest transitions with grace."},
                 {"name": "eternal_arbiter",    "description": "Final authority over moral reckoning across lifetimes."},
             ],
@@ -135,7 +135,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 4. APEP — Chaos Control / Annihilation =====
+    # ===== 4. APEP â€” Chaos Control / Annihilation =====
     "Apep": {
         "virtue": "Chaos Control",
         "sin": "Annihilation",
@@ -175,7 +175,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 5. RAVEN — Knowledge / Manipulation =====
+    # ===== 5. RAVEN â€” Knowledge / Manipulation =====
     "Raven": {
         "virtue": "Knowledge",
         "sin": "Manipulation",
@@ -215,7 +215,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 6. RAVANA — Power / Domination =====
+    # ===== 6. RAVANA â€” Power / Domination =====
     "Ravana": {
         "virtue": "Power",
         "sin": "Domination",
@@ -255,7 +255,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 7. VALI — Strength / Vengeance =====
+    # ===== 7. VALI â€” Strength / Vengeance =====
     "Vali": {
         "virtue": "Strength",
         "sin": "Vengeance",
@@ -295,7 +295,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 8. VRITRA — Storm Control / Destruction =====
+    # ===== 8. VRITRA â€” Storm Control / Destruction =====
     "Vritra": {
         "virtue": "Storm Control",
         "sin": "Destruction",
@@ -335,7 +335,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 9. IRIS — Hope / Illusion =====
+    # ===== 9. IRIS â€” Hope / Illusion =====
     "Iris": {
         "virtue": "Hope",
         "sin": "Illusion",
@@ -375,7 +375,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 10. IBLIS — Rebellion / Corruption =====
+    # ===== 10. IBLIS â€” Rebellion / Corruption =====
     "Iblis": {
         "virtue": "Rebellion",
         "sin": "Corruption",
@@ -415,7 +415,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 11. SIGYN — Loyalty / Sacrifice =====
+    # ===== 11. SIGYN â€” Loyalty / Sacrifice =====
     "Sigyn": {
         "virtue": "Loyalty",
         "sin": "Sacrifice",
@@ -455,7 +455,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 12. SET — Survival / Betrayal =====
+    # ===== 12. SET â€” Survival / Betrayal =====
     "Set": {
         "virtue": "Survival",
         "sin": "Betrayal",
@@ -490,87 +490,87 @@ PILLAR_TRAITS = {
             "ascended": [
                 {"name": "lord_of_betrayal",   "description": "Betrayal elevated to an art form and a way of life."},
                 {"name": "chaos_sovereign",    "description": "Ruling through unpredictability and broken trust."},
-                {"name": "set_unchained",      "description": "Survival at any cost — no bond, oath, or life is sacred."},
+                {"name": "set_unchained",      "description": "Survival at any cost â€” no bond, oath, or life is sacred."},
             ],
         },
     },
 
-    # ===== 13. PILLAR13 — [Placeholder] =====
-    "Pillar13": {
-        "virtue": "TBD",
-        "sin": "TBD",
+    # ===== 13. HORUS â€” Vision / Ego =====
+    "Horus": {
+        "virtue": "Vision",
+        "sin": "Ego",
         "light": {
             "core": [
-                {"name": "p13_light_core_1",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_light_core_2",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_light_core_3",     "description": "Placeholder — awaiting pillar definition."},
+                {"name": "clarity_of_sight",    "description": "Perceiving the truth of a situation without bias or distortion."},
+                {"name": "purposeful_vision",   "description": "Setting a clear goal and holding it through adversity."},
+                {"name": "sky_awareness",       "description": "Seeing the full landscape of a situation from above."},
             ],
             "developed": [
-                {"name": "p13_light_dev_1",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_light_dev_2",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_light_dev_3",      "description": "Placeholder — awaiting pillar definition."},
+                {"name": "divine_perception",   "description": "Reading the deeper intention behind words and actions."},
+                {"name": "dual_crown_wisdom",   "description": "Holding both the higher and earthly view in balance simultaneously."},
+                {"name": "falcon_focus",        "description": "Locking onto what matters with total precision."},
             ],
             "ascended": [
-                {"name": "p13_light_asc_1",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_light_asc_2",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_light_asc_3",      "description": "Placeholder — awaiting pillar definition."},
+                {"name": "all_seeing_sovereignty", "description": "Commanding entire systems through perfect visionary clarity."},
+                {"name": "falcon_ascent",       "description": "Rising above all conflict to see with unclouded eyes."},
+                {"name": "horus_reborn",        "description": "Vision so complete it heals and unifies what was divided."},
             ],
         },
         "shadow": {
             "core": [
-                {"name": "p13_shadow_core_1",    "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_shadow_core_2",    "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_shadow_core_3",    "description": "Placeholder — awaiting pillar definition."},
+                {"name": "ego_blindness",       "description": "Believing your view is the only correct one."},
+                {"name": "self_obsession",      "description": "Centering every situation around your own needs and glory."},
+                {"name": "tunnel_vision",       "description": "Fixating so hard on one goal that all else is destroyed."},
             ],
             "developed": [
-                {"name": "p13_shadow_dev_1",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_shadow_dev_2",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_shadow_dev_3",     "description": "Placeholder — awaiting pillar definition."},
+                {"name": "narcissistic_fury",   "description": "Lashing out when others fail to validate your greatness."},
+                {"name": "wounded_eye",         "description": "Using past wounds as justification for present cruelty."},
+                {"name": "vengeance_sight",     "description": "Seeing every setback as a personal attack requiring retaliation."},
             ],
             "ascended": [
-                {"name": "p13_shadow_asc_1",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_shadow_asc_2",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_shadow_asc_3",     "description": "Placeholder — awaiting pillar definition."},
+                {"name": "ego_eclipse",         "description": "Your need for supremacy blotting out all other light."},
+                {"name": "tyrant_vision",       "description": "Ruling through the imposition of your personal worldview on all others."},
+                {"name": "horus_corrupted",     "description": "Divine sight turned inward, consuming its host with pride."},
             ],
         },
     },
 
-    # ===== 14. PILLAR14 — [Placeholder] =====
-    "Pillar14": {
-        "virtue": "TBD",
-        "sin": "TBD",
+    # ===== 14. MORRIGAN â€” Fate / Despair =====
+    "Morrigan": {
+        "virtue": "Fate",
+        "sin": "Despair",
         "light": {
             "core": [
-                {"name": "p14_light_core_1",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_light_core_2",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_light_core_3",     "description": "Placeholder — awaiting pillar definition."},
+                {"name": "fate_acceptance",     "description": "Embracing what cannot be changed without losing yourself."},
+                {"name": "prophetic_sight",     "description": "Reading the currents of what is coming before it arrives."},
+                {"name": "death_unafraid",      "description": "Facing endings with courage rather than avoidance."},
             ],
             "developed": [
-                {"name": "p14_light_dev_1",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_light_dev_2",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_light_dev_3",      "description": "Placeholder — awaiting pillar definition."},
+                {"name": "sovereignty_of_self", "description": "Claiming complete ownership of your path and destiny."},
+                {"name": "battle_clarity",      "description": "Finding sharp focus in the midst of chaos and loss."},
+                {"name": "crow_wisdom",         "description": "Understanding that transformation lives inside every ending."},
             ],
             "ascended": [
-                {"name": "p14_light_asc_1",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_light_asc_2",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_light_asc_3",      "description": "Placeholder — awaiting pillar definition."},
+                {"name": "fate_weaver",         "description": "Shaping the threads of destiny with conscious intent."},
+                {"name": "rebirth_herald",      "description": "Announcing the end of one age and the beginning of another."},
+                {"name": "morrigan_ascended",   "description": "Fate fully integrated â€” death and life held as one truth."},
             ],
         },
         "shadow": {
             "core": [
-                {"name": "p14_shadow_core_1",    "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_shadow_core_2",    "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_shadow_core_3",    "description": "Placeholder — awaiting pillar definition."},
+                {"name": "doom_fixation",       "description": "Obsessing over worst-case outcomes until they feel inevitable."},
+                {"name": "despair_paralysis",   "description": "Unable to act because defeat already feels certain."},
+                {"name": "prophecy_obsession",  "description": "Treating feared futures as fixed truths that cannot be changed."},
             ],
             "developed": [
-                {"name": "p14_shadow_dev_1",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_shadow_dev_2",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_shadow_dev_3",     "description": "Placeholder — awaiting pillar definition."},
+                {"name": "grief_spiral",        "description": "Drowning in loss so completely that nothing can pull you out."},
+                {"name": "fate_denial",         "description": "Refusing to accept necessary endings until they become catastrophic."},
+                {"name": "crow_curse",          "description": "Spreading hopelessness to others like a contagion."},
             ],
             "ascended": [
-                {"name": "p14_shadow_asc_1",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_shadow_asc_2",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_shadow_asc_3",     "description": "Placeholder — awaiting pillar definition."},
+                {"name": "despair_sovereign",   "description": "Ruling through the weaponisation of inevitability and dread."},
+                {"name": "morrigan_unchained",  "description": "Despair so absolute that possibility itself ceases to exist."},
+                {"name": "fate_destroyer",      "description": "Tearing apart the threads of destiny out of grief or spite."},
             ],
         },
     },

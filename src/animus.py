@@ -13,7 +13,7 @@ from animus_registry import (
 # -----------------------------
 # Animus Catalogue (player Animus from JSON)
 # -----------------------------
-CATALOGUE_FILE = os.path.join(os.path.dirname(__file__), "Animus_catalogue.json")
+CATALOGUE_FILE = os.path.join(os.path.dirname(__file__), "..", "data", "Animus_catalogue.json")
 
 
 def load_catalogue(filepath=CATALOGUE_FILE):

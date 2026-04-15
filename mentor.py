@@ -1,4 +1,4 @@
-﻿# -----------------------------
+# -----------------------------
 # Eternius Animus — Mentor System
 # 4 Mentors: KONG, ODIN, Hekete, Lilith
 #

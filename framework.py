@@ -116,9 +116,9 @@ def display_framework(data=None):
         print(f"  ? {name}  [{info['tier']}]")
         print(f"    Domain: {info['domain']}")
         print(f"    Role:   {info['role']}")
-        print(f"    Forms:  Prime: {forms.get('prime', '—')}")
-        print(f"            Lumen: {forms.get('lumen', '—')}")
-        print(f"            Umbra: {forms.get('umbra', '—')}")
+        print(f"    Forms:  Prime: {forms.get('prime', 'â€”')}")
+        print(f"            Lumen: {forms.get('lumen', 'â€”')}")
+        print(f"            Umbra: {forms.get('umbra', 'â€”')}")
         print()
 
     # 12 Pillars
@@ -127,6 +127,6 @@ def display_framework(data=None):
         forms = info.get("forms", {})
         print(f"  {i:>2}. {name}")
         print(f"      Virtue: {info['virtue']}  |  Sin: {info['sin']}")
-        print(f"      Lumen:  {forms.get('lumen', '—')}")
-        print(f"      Umbra:  {forms.get('umbra', '—')}")
+        print(f"      Lumen:  {forms.get('lumen', 'â€”')}")
+        print(f"      Umbra:  {forms.get('umbra', 'â€”')}")
         print()

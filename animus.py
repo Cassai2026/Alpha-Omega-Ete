@@ -169,7 +169,7 @@ def get_animus_form(pillar_name, form_name):
         form_name:   "omega", "ultima", or "eternium"
 
     Returns:
-        dict with name, description, abilities — or None.
+        dict with name, description, abilities â€” or None.
     """
     return get_registry_form(pillar_name, form_name)
 

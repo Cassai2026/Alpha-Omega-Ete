@@ -1,6 +1,6 @@
 # -----------------------------
-# Eternius Animus — Shadow Traits Data Module
-# 14 Pillars × 18 traits each = 252 traits total
+# Eternius Animus â€” Shadow Traits Data Module
+# 14 Pillars Ã— 18 traits each = 252 traits total
 #
 # Structure per pillar:
 #   light:
@@ -15,7 +15,7 @@
 
 PILLAR_TRAITS = {
 
-    # ===== 1. JANUS — Wisdom / Deception =====
+    # ===== 1. JANUS â€” Wisdom / Deception =====
     "Janus": {
         "virtue": "Wisdom",
         "sin": "Deception",
@@ -55,7 +55,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 2. JORMUNGANDR — Balance / Consumption =====
+    # ===== 2. JORMUNGANDR â€” Balance / Consumption =====
     "Jormungandr": {
         "virtue": "Balance",
         "sin": "Consumption",
@@ -95,7 +95,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 3. ANUBIS — Justice / Judgment =====
+    # ===== 3. ANUBIS â€” Justice / Judgment =====
     "Anubis": {
         "virtue": "Justice",
         "sin": "Judgment",
@@ -111,7 +111,7 @@ PILLAR_TRAITS = {
                 {"name": "guardian_vigilance",  "description": "Watching over the vulnerable with tireless dedication."},
             ],
             "ascended": [
-                {"name": "scales_of_maat",     "description": "Perfect cosmic justice — truth weighed against the feather."},
+                {"name": "scales_of_maat",     "description": "Perfect cosmic justice â€” truth weighed against the feather."},
                 {"name": "death_passage_guide", "description": "Guiding souls through their darkest transitions with grace."},
                 {"name": "eternal_arbiter",    "description": "Final authority over moral reckoning across lifetimes."},
             ],
@@ -135,7 +135,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 4. APEP — Chaos Control / Annihilation =====
+    # ===== 4. APEP â€” Chaos Control / Annihilation =====
     "Apep": {
         "virtue": "Chaos Control",
         "sin": "Annihilation",
@@ -175,7 +175,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 5. RAVEN — Knowledge / Manipulation =====
+    # ===== 5. RAVEN â€” Knowledge / Manipulation =====
     "Raven": {
         "virtue": "Knowledge",
         "sin": "Manipulation",
@@ -215,7 +215,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 6. RAVANA — Power / Domination =====
+    # ===== 6. RAVANA â€” Power / Domination =====
     "Ravana": {
         "virtue": "Power",
         "sin": "Domination",
@@ -255,7 +255,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 7. VALI — Strength / Vengeance =====
+    # ===== 7. VALI â€” Strength / Vengeance =====
     "Vali": {
         "virtue": "Strength",
         "sin": "Vengeance",
@@ -295,7 +295,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 8. VRITRA — Storm Control / Destruction =====
+    # ===== 8. VRITRA â€” Storm Control / Destruction =====
     "Vritra": {
         "virtue": "Storm Control",
         "sin": "Destruction",
@@ -335,7 +335,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 9. IRIS — Hope / Illusion =====
+    # ===== 9. IRIS â€” Hope / Illusion =====
     "Iris": {
         "virtue": "Hope",
         "sin": "Illusion",
@@ -375,7 +375,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 10. IBLIS — Rebellion / Corruption =====
+    # ===== 10. IBLIS â€” Rebellion / Corruption =====
     "Iblis": {
         "virtue": "Rebellion",
         "sin": "Corruption",
@@ -415,7 +415,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 11. SIGYN — Loyalty / Sacrifice =====
+    # ===== 11. SIGYN â€” Loyalty / Sacrifice =====
     "Sigyn": {
         "virtue": "Loyalty",
         "sin": "Sacrifice",
@@ -455,7 +455,7 @@ PILLAR_TRAITS = {
         },
     },
 
-    # ===== 12. SET — Survival / Betrayal =====
+    # ===== 12. SET â€” Survival / Betrayal =====
     "Set": {
         "virtue": "Survival",
         "sin": "Betrayal",
@@ -490,87 +490,87 @@ PILLAR_TRAITS = {
             "ascended": [
                 {"name": "lord_of_betrayal",   "description": "Betrayal elevated to an art form and a way of life."},
                 {"name": "chaos_sovereign",    "description": "Ruling through unpredictability and broken trust."},
-                {"name": "set_unchained",      "description": "Survival at any cost — no bond, oath, or life is sacred."},
+                {"name": "set_unchained",      "description": "Survival at any cost â€” no bond, oath, or life is sacred."},
             ],
         },
     },
 
-    # ===== 13. PILLAR13 — [Placeholder] =====
+    # ===== 13. PILLAR13 â€” [Placeholder] =====
     "Pillar13": {
         "virtue": "TBD",
         "sin": "TBD",
         "light": {
             "core": [
-                {"name": "p13_light_core_1",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_light_core_2",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_light_core_3",     "description": "Placeholder — awaiting pillar definition."},
+                {"name": "p13_light_core_1",     "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p13_light_core_2",     "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p13_light_core_3",     "description": "Placeholder â€” awaiting pillar definition."},
             ],
             "developed": [
-                {"name": "p13_light_dev_1",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_light_dev_2",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_light_dev_3",      "description": "Placeholder — awaiting pillar definition."},
+                {"name": "p13_light_dev_1",      "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p13_light_dev_2",      "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p13_light_dev_3",      "description": "Placeholder â€” awaiting pillar definition."},
             ],
             "ascended": [
-                {"name": "p13_light_asc_1",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_light_asc_2",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_light_asc_3",      "description": "Placeholder — awaiting pillar definition."},
+                {"name": "p13_light_asc_1",      "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p13_light_asc_2",      "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p13_light_asc_3",      "description": "Placeholder â€” awaiting pillar definition."},
             ],
         },
         "shadow": {
             "core": [
-                {"name": "p13_shadow_core_1",    "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_shadow_core_2",    "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_shadow_core_3",    "description": "Placeholder — awaiting pillar definition."},
+                {"name": "p13_shadow_core_1",    "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p13_shadow_core_2",    "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p13_shadow_core_3",    "description": "Placeholder â€” awaiting pillar definition."},
             ],
             "developed": [
-                {"name": "p13_shadow_dev_1",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_shadow_dev_2",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_shadow_dev_3",     "description": "Placeholder — awaiting pillar definition."},
+                {"name": "p13_shadow_dev_1",     "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p13_shadow_dev_2",     "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p13_shadow_dev_3",     "description": "Placeholder â€” awaiting pillar definition."},
             ],
             "ascended": [
-                {"name": "p13_shadow_asc_1",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_shadow_asc_2",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p13_shadow_asc_3",     "description": "Placeholder — awaiting pillar definition."},
+                {"name": "p13_shadow_asc_1",     "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p13_shadow_asc_2",     "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p13_shadow_asc_3",     "description": "Placeholder â€” awaiting pillar definition."},
             ],
         },
     },
 
-    # ===== 14. PILLAR14 — [Placeholder] =====
+    # ===== 14. PILLAR14 â€” [Placeholder] =====
     "Pillar14": {
         "virtue": "TBD",
         "sin": "TBD",
         "light": {
             "core": [
-                {"name": "p14_light_core_1",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_light_core_2",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_light_core_3",     "description": "Placeholder — awaiting pillar definition."},
+                {"name": "p14_light_core_1",     "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p14_light_core_2",     "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p14_light_core_3",     "description": "Placeholder â€” awaiting pillar definition."},
             ],
             "developed": [
-                {"name": "p14_light_dev_1",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_light_dev_2",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_light_dev_3",      "description": "Placeholder — awaiting pillar definition."},
+                {"name": "p14_light_dev_1",      "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p14_light_dev_2",      "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p14_light_dev_3",      "description": "Placeholder â€” awaiting pillar definition."},
             ],
             "ascended": [
-                {"name": "p14_light_asc_1",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_light_asc_2",      "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_light_asc_3",      "description": "Placeholder — awaiting pillar definition."},
+                {"name": "p14_light_asc_1",      "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p14_light_asc_2",      "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p14_light_asc_3",      "description": "Placeholder â€” awaiting pillar definition."},
             ],
         },
         "shadow": {
             "core": [
-                {"name": "p14_shadow_core_1",    "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_shadow_core_2",    "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_shadow_core_3",    "description": "Placeholder — awaiting pillar definition."},
+                {"name": "p14_shadow_core_1",    "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p14_shadow_core_2",    "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p14_shadow_core_3",    "description": "Placeholder â€” awaiting pillar definition."},
             ],
             "developed": [
-                {"name": "p14_shadow_dev_1",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_shadow_dev_2",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_shadow_dev_3",     "description": "Placeholder — awaiting pillar definition."},
+                {"name": "p14_shadow_dev_1",     "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p14_shadow_dev_2",     "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p14_shadow_dev_3",     "description": "Placeholder â€” awaiting pillar definition."},
             ],
             "ascended": [
-                {"name": "p14_shadow_asc_1",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_shadow_asc_2",     "description": "Placeholder — awaiting pillar definition."},
-                {"name": "p14_shadow_asc_3",     "description": "Placeholder — awaiting pillar definition."},
+                {"name": "p14_shadow_asc_1",     "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p14_shadow_asc_2",     "description": "Placeholder â€” awaiting pillar definition."},
+                {"name": "p14_shadow_asc_3",     "description": "Placeholder â€” awaiting pillar definition."},
             ],
         },
     },

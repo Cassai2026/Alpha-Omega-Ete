@@ -184,7 +184,7 @@ def calculate_biological_roi(agency, systemic_stress):
 # Node-bound helpers on SovereignEngine
 # -----------------------------
 
-def _engine_calculate_sovereign_index(engine, s, e, n, g, b):
+def engine_calculate_sovereign_index(engine, s, e, n, g, b):
     """
     Node-bound wrapper: runs calculate_sovereign_index and stamps the node_id.
 
@@ -197,5 +197,5 @@ def _engine_calculate_sovereign_index(engine, s, e, n, g, b):
 
 
 # Attach as a method so callers can do: engine.calculate_sovereign_index(...)
-SovereignEngine.calculate_sovereign_index = _engine_calculate_sovereign_index
+SovereignEngine.calculate_sovereign_index = engine_calculate_sovereign_index
 SovereignEngine.calculate_biological_roi = staticmethod(calculate_biological_roi)

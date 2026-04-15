@@ -443,73 +443,73 @@ ANIMUS_REGISTRY = {
         },
     },
 
-    # ===== 13. PILLAR13 � [Placeholder] =====
-    "Pillar13": {
-        "virtue": "TBD",
-        "sin": "TBD",
-        "mentor": "TBD",
+    # ===== 13. HORUS — Vision / Ego =====
+    "Horus": {
+        "virtue": "Vision",
+        "sin": "Ego",
+        "mentor": "ODIN",
         "forms": {
             "omega": {
-                "name": "Pillar13 Omega",
-                "description": "Placeholder � awaiting pillar definition.",
+                "name": "Eye of Horus Omega",
+                "description": "The awakened seer whose perception pierces every veil and illusion.",
                 "abilities": [
-                    "p13_omega_ability_1",
-                    "p13_omega_ability_2",
-                    "p13_omega_ability_3",
+                    "falcon_sight",
+                    "sky_scan",
+                    "purpose_lock",
                 ],
             },
             "ultima": {
-                "name": "Pillar13 Ultima",
-                "description": "Placeholder � awaiting pillar definition.",
+                "name": "Eye of Horus Ultima",
+                "description": "Sky sovereign who commands divine sight across all domains.",
                 "abilities": [
-                    "p13_ultima_ability_1",
-                    "p13_ultima_ability_2",
-                    "p13_ultima_ability_3",
+                    "dual_crown_dominion",
+                    "celestial_gaze",
+                    "throne_of_clarity",
                 ],
             },
             "eternium": {
-                "name": "Pillar13 Eternium",
-                "description": "Placeholder � awaiting pillar definition.",
+                "name": "Horus Eternium",
+                "description": "The eternal sky god — vision so absolute it reshapes the world below.",
                 "abilities": [
-                    "p13_eternium_ability_1",
-                    "p13_eternium_ability_2",
-                    "p13_eternium_ability_3",
+                    "all_seeing_sovereignty",
+                    "falcon_ascension",
+                    "eternal_horizon",
                 ],
             },
         },
     },
 
-    # ===== 14. PILLAR14 � [Placeholder] =====
-    "Pillar14": {
-        "virtue": "TBD",
-        "sin": "TBD",
-        "mentor": "TBD",
+    # ===== 14. MORRIGAN — Fate / Despair =====
+    "Morrigan": {
+        "virtue": "Fate",
+        "sin": "Despair",
+        "mentor": "Hekete",
         "forms": {
             "omega": {
-                "name": "Pillar14 Omega",
-                "description": "Placeholder � awaiting pillar definition.",
+                "name": "Phantom Queen Omega",
+                "description": "The awakened fate-seer who faces endings without flinching.",
                 "abilities": [
-                    "p14_omega_ability_1",
-                    "p14_omega_ability_2",
-                    "p14_omega_ability_3",
+                    "crow_flight",
+                    "death_unafraid",
+                    "battle_prophecy",
                 ],
             },
             "ultima": {
-                "name": "Pillar14 Ultima",
-                "description": "Placeholder � awaiting pillar definition.",
+                "name": "Phantom Queen Ultima",
+                "description": "Walker between worlds who reads and speaks the threads of destiny.",
                 "abilities": [
-                    "p14_ultima_ability_1",
-                    "p14_ultima_ability_2",
-                    "p14_ultima_ability_3",
+                    "sovereignty_of_self",
+                    "prophecy_weave",
+                    "crow_storm",
                 ],
             },
             "eternium": {
-                "name": "Pillar14 Eternium",
-                "description": "Placeholder � awaiting pillar definition.",
+                "name": "Morrigan Eternium",
+                "description": "The eternal Phantom Queen — fate made manifest through living will.",
                 "abilities": [
-                    "p14_eternium_ability_1",
-                    "p14_eternium_ability_2",
-                    "p14_eternium_ability_3",
+                    "fate_dominion",
+                    "rebirth_herald",
+                    "eternal_sovereignty",
                 ],
             },
         },
@@ -535,7 +535,7 @@ def get_form(pillar_name, form_name):
         form_name:   "omega", "ultima", or "eternium"
 
     Returns:
-        dict with name, description, abilities � or None.
+        dict with name, description, abilities — or None.
     """
     pillar = ANIMUS_REGISTRY.get(pillar_name)
     if pillar is None:
@@ -602,8 +602,3 @@ def get_animus_forms(pillar_name):
     if pillar is None:
         return None
     return pillar.get("forms")
-
-
-def get_animus_mentor(pillar_name):
-    """Return the mentor name for a pillar, or None."""
-    return get_mentor(pillar_name)

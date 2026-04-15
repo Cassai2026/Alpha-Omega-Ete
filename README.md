@@ -33,6 +33,38 @@ This is the real-world operational structure built to regenerate the physical en
 3. **Human:** Trauma-informed, neurodivergent-first design that adapts to continuous, multidimensional human states rather than binary thresholds.
 4. **Generational (4D):** A self-sustaining knowledge ecosystem where local surplus builds the future workforce.
 
+## Repository Structure
+
+```
+├── src/            Python source — Animus engine, game loop, sovereign core
+├── tests/          Unit tests (164 tests across all modules)
+├── data/           JSON data — Animus catalogue & framework
+├── web/            Browser prototype — HTML / CSS / JS
+├── native/         C kernel & header files (Lilieth kernel, Sovereign NGO)
+├── assets/images/  Project images
+└── docs/
+    ├── MASTER_DOC.md          Full mission, vision, pillars & gameplay
+    ├── Master_Doc_Beta.md     Expanded technical & community architecture
+    ├── PILLARS.md             14-pillar reference
+    ├── SOVEREIGN.md           Sovereign OS master repository
+    ├── ETHICAL_USE.md         Ethical usage guidelines
+    ├── OWNERSHIP_IP.md        Copyright & IP statement
+    ├── WORKFLOW.md            12-step repo workflow guide
+    ├── PROJECT_STATUS.md      Current build status & AI handoff context
+    ├── governance/            Governance docx files
+    └── evidence/              CassAI evidence archive (AI/CPTSD research)
+```
+
+## Getting Started
+
+```bash
+# Run the game
+python src/main.py
+
+# Run all tests
+python -m pytest tests/
+```
+
 ## Licensing & Usage
 **Notice: This repository operates under a strict Dual-License Agreement to prevent corporate extraction.**
 * **Codebase:** GNU AGPLv3. (If you modify and run this code on a network, you MUST open-source your modifications under the same license).

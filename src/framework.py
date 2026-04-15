@@ -4,7 +4,7 @@ import os
 # -----------------------------
 # Animus Framework (Celestial Triad + 12 Pillars)
 # -----------------------------
-FRAMEWORK_FILE = os.path.join(os.path.dirname(__file__), "Animus_framework.json")
+FRAMEWORK_FILE = os.path.join(os.path.dirname(__file__), "..", "data", "Animus_framework.json")
 
 
 def load_framework(filepath=FRAMEWORK_FILE):

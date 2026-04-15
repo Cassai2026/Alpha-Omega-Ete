@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CassAI – The Mirrored Tetrahedral Governance Ecosystem</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     /* ── Reset & base ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -387,6 +388,7 @@
       <li><a href="#pillars">Pillars</a></li>
       <li><a href="#framework">4D Framework</a></li>
       <li><a href="#manifesto">Manifesto</a></li>
+      <li><a href="#eternius-game">Play</a></li>
       <li><a href="#ethics">Ethics</a></li>
     </ul>
   </div>
@@ -829,6 +831,44 @@
 
 <hr class="divider" />
 
+<!-- ── Orbit Hero ── -->
+<section class="orbit-hero" id="eternius-hero">
+  <p class="orbit-title">Eternius — 4D Simulation</p>
+  <p class="orbit-sub">The Tetrahedral Primals: LILIETH · ODIN · HEKETE · KONG</p>
+  <div class="orbit-ring">
+    <div class="orbit-center">LILIETH<br>Prime Origin</div>
+    <div class="orbit-node">ODIN<br>Allfather</div>
+    <div class="orbit-node">KONG<br>Alpha</div>
+    <div class="orbit-node">HEKETE<br>Goddess</div>
+    <div class="orbit-node">ANIMUS<br>YOU</div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ── Eternius Game Canvas ── -->
+<section class="section" id="eternius-game">
+  <div class="container">
+    <span class="badge">Eternius Overworld</span>
+    <div class="game-header">
+      <h2>The 14 Pillars — Overworld &amp; Underworld Map</h2>
+      <p>Navigate the isometric grid. Encounter Guardians (light) and Shadow Lords (void). Collect XP.</p>
+    </div>
+    <div class="game-wrapper">
+      <canvas id="eternius-canvas" width="860" height="560" tabindex="0"
+        aria-label="Eternius 2.5D Isometric Game Canvas"></canvas>
+      <div class="game-hud">
+        <span><span class="hud-label">XP</span><span id="hud-xp">0</span></span>
+        <span><span class="hud-label">POS</span><span id="hud-pos">—</span></span>
+        <span><span class="hud-label">ZONE</span><span id="hud-stage">Overworld</span></span>
+      </div>
+      <p class="game-controls-hint">WASD or Arrow Keys to move · Step on a Guardian or Shadow Lord to trigger an encounter</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
 <!-- ── Ethics ── -->
 <section class="section" id="ethics">
   <div class="container">
@@ -932,5 +972,6 @@
   </div>
 </footer>
 
+<script src="game.js" defer></script>
 </body>
 </html>

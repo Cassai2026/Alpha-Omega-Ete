@@ -1,6 +1,6 @@
 # -----------------------------
-# Eternius Animus — Animus Registry
-# 14 Pillars × 3 forms each (Omega, Ultima, Eternium)
+# Eternius Animus ï¿½ Animus Registry
+# 14 Pillars ï¿½ 3 forms each (Omega, Ultima, Eternium)
 #
 # Structure per pillar:
 #   virtue, sin, mentor, forms:
@@ -11,7 +11,7 @@
 
 ANIMUS_REGISTRY = {
 
-    # ===== 1. JANUS — Wisdom / Deception =====
+    # ===== 1. JANUS ï¿½ Wisdom / Deception =====
     "Janus": {
         "virtue": "Wisdom",
         "sin": "Deception",
@@ -37,7 +37,7 @@ ANIMUS_REGISTRY = {
             },
             "eternium": {
                 "name": "Janus Eternium",
-                "description": "Eternal arbiter of all paths — past, present, and unwritten.",
+                "description": "Eternal arbiter of all paths ï¿½ past, present, and unwritten.",
                 "abilities": [
                     "destiny_rewrite",
                     "omniscient_gate",
@@ -47,7 +47,7 @@ ANIMUS_REGISTRY = {
         },
     },
 
-    # ===== 2. JORMUNGANDR — Balance / Consumption =====
+    # ===== 2. JORMUNGANDR ï¿½ Balance / Consumption =====
     "Jormungandr": {
         "virtue": "Balance",
         "sin": "Consumption",
@@ -73,7 +73,7 @@ ANIMUS_REGISTRY = {
             },
             "eternium": {
                 "name": "Jormungandr Eternium",
-                "description": "The infinite serpent — embodiment of cosmic balance across all realms.",
+                "description": "The infinite serpent ï¿½ embodiment of cosmic balance across all realms.",
                 "abilities": [
                     "world_coil_dominion",
                     "creation_entropy_merge",
@@ -83,7 +83,7 @@ ANIMUS_REGISTRY = {
         },
     },
 
-    # ===== 3. ANUBIS — Justice / Judgment =====
+    # ===== 3. ANUBIS ï¿½ Justice / Judgment =====
     "Anubis": {
         "virtue": "Justice",
         "sin": "Judgment",
@@ -119,7 +119,7 @@ ANIMUS_REGISTRY = {
         },
     },
 
-    # ===== 4. APEP — Chaos Control / Annihilation =====
+    # ===== 4. APEP ï¿½ Chaos Control / Annihilation =====
     "Apep": {
         "virtue": "Chaos Control",
         "sin": "Annihilation",
@@ -145,7 +145,7 @@ ANIMUS_REGISTRY = {
             },
             "eternium": {
                 "name": "Apep Eternium",
-                "description": "The eternal serpent of renewal — annihilation reforged as creation.",
+                "description": "The eternal serpent of renewal ï¿½ annihilation reforged as creation.",
                 "abilities": [
                     "abyss_command",
                     "chaos_genesis",
@@ -155,7 +155,7 @@ ANIMUS_REGISTRY = {
         },
     },
 
-    # ===== 5. RAVEN — Knowledge / Manipulation =====
+    # ===== 5. RAVEN ï¿½ Knowledge / Manipulation =====
     "Raven": {
         "virtue": "Knowledge",
         "sin": "Manipulation",
@@ -181,7 +181,7 @@ ANIMUS_REGISTRY = {
             },
             "eternium": {
                 "name": "Raven Eternium",
-                "description": "The all-knowing — a living archive of every secret ever spoken.",
+                "description": "The all-knowing ï¿½ a living archive of every secret ever spoken.",
                 "abilities": [
                     "omniscient_web",
                     "truth_rewrite",
@@ -191,7 +191,7 @@ ANIMUS_REGISTRY = {
         },
     },
 
-    # ===== 6. RAVANA — Power / Domination =====
+    # ===== 6. RAVANA ï¿½ Power / Domination =====
     "Ravana": {
         "virtue": "Power",
         "sin": "Domination",
@@ -217,7 +217,7 @@ ANIMUS_REGISTRY = {
             },
             "eternium": {
                 "name": "Ravana Eternium",
-                "description": "The eternal sovereign — power without limit wielded in perfect service.",
+                "description": "The eternal sovereign ï¿½ power without limit wielded in perfect service.",
                 "abilities": [
                     "cosmic_throne",
                     "ten_fold_dominion",
@@ -227,7 +227,7 @@ ANIMUS_REGISTRY = {
         },
     },
 
-    # ===== 7. VALI — Strength / Vengeance =====
+    # ===== 7. VALI ï¿½ Strength / Vengeance =====
     "Vali": {
         "virtue": "Strength",
         "sin": "Vengeance",
@@ -253,7 +253,7 @@ ANIMUS_REGISTRY = {
             },
             "eternium": {
                 "name": "Vali Eternium",
-                "description": "The eternal champion — strength that echoes across generations.",
+                "description": "The eternal champion ï¿½ strength that echoes across generations.",
                 "abilities": [
                     "god_slayer_strike",
                     "valkyrie_judgment",
@@ -263,7 +263,7 @@ ANIMUS_REGISTRY = {
         },
     },
 
-    # ===== 8. VRITRA — Storm Control / Destruction =====
+    # ===== 8. VRITRA ï¿½ Storm Control / Destruction =====
     "Vritra": {
         "virtue": "Storm Control",
         "sin": "Destruction",
@@ -289,7 +289,7 @@ ANIMUS_REGISTRY = {
             },
             "eternium": {
                 "name": "Vritra Eternium",
-                "description": "The eternal storm — elemental wrath reforged as cosmic power.",
+                "description": "The eternal storm ï¿½ elemental wrath reforged as cosmic power.",
                 "abilities": [
                     "apocalypse_tempest",
                     "sky_sovereign",
@@ -299,7 +299,7 @@ ANIMUS_REGISTRY = {
         },
     },
 
-    # ===== 9. IRIS — Hope / Illusion =====
+    # ===== 9. IRIS ï¿½ Hope / Illusion =====
     "Iris": {
         "virtue": "Hope",
         "sin": "Illusion",
@@ -325,7 +325,7 @@ ANIMUS_REGISTRY = {
             },
             "eternium": {
                 "name": "Iris Eternium",
-                "description": "The eternal light — an inexhaustible source of hope across all realms.",
+                "description": "The eternal light ï¿½ an inexhaustible source of hope across all realms.",
                 "abilities": [
                     "divine_spectrum",
                     "hope_immortal",
@@ -335,7 +335,7 @@ ANIMUS_REGISTRY = {
         },
     },
 
-    # ===== 10. IBLIS — Rebellion / Corruption =====
+    # ===== 10. IBLIS ï¿½ Rebellion / Corruption =====
     "Iblis": {
         "virtue": "Rebellion",
         "sin": "Corruption",
@@ -361,7 +361,7 @@ ANIMUS_REGISTRY = {
             },
             "eternium": {
                 "name": "Iblis Eternium",
-                "description": "The eternal liberator — rebellion redeemed as the highest form of service.",
+                "description": "The eternal liberator ï¿½ rebellion redeemed as the highest form of service.",
                 "abilities": [
                     "flame_of_autonomy",
                     "freedom_dominion",
@@ -371,7 +371,7 @@ ANIMUS_REGISTRY = {
         },
     },
 
-    # ===== 11. SIGYN — Loyalty / Sacrifice =====
+    # ===== 11. SIGYN ï¿½ Loyalty / Sacrifice =====
     "Sigyn": {
         "virtue": "Loyalty",
         "sin": "Sacrifice",
@@ -397,7 +397,7 @@ ANIMUS_REGISTRY = {
             },
             "eternium": {
                 "name": "Sigyn Eternium",
-                "description": "The eternal guardian — loyalty so pure it transcends death itself.",
+                "description": "The eternal guardian ï¿½ loyalty so pure it transcends death itself.",
                 "abilities": [
                     "love_immortal",
                     "bond_dominion",
@@ -407,7 +407,7 @@ ANIMUS_REGISTRY = {
         },
     },
 
-    # ===== 12. SET — Survival / Betrayal =====
+    # ===== 12. SET ï¿½ Survival / Betrayal =====
     "Set": {
         "virtue": "Survival",
         "sin": "Betrayal",
@@ -433,7 +433,7 @@ ANIMUS_REGISTRY = {
             },
             "eternium": {
                 "name": "Set Eternium",
-                "description": "The eternal survivor — an unkillable will forged in the harshest fires.",
+                "description": "The eternal survivor ï¿½ an unkillable will forged in the harshest fires.",
                 "abilities": [
                     "unkillable_sovereignty",
                     "chaos_rebirth",
@@ -443,7 +443,7 @@ ANIMUS_REGISTRY = {
         },
     },
 
-    # ===== 13. PILLAR13 — [Placeholder] =====
+    # ===== 13. PILLAR13 ï¿½ [Placeholder] =====
     "Pillar13": {
         "virtue": "TBD",
         "sin": "TBD",
@@ -451,7 +451,7 @@ ANIMUS_REGISTRY = {
         "forms": {
             "omega": {
                 "name": "Pillar13 Omega",
-                "description": "Placeholder — awaiting pillar definition.",
+                "description": "Placeholder ï¿½ awaiting pillar definition.",
                 "abilities": [
                     "p13_omega_ability_1",
                     "p13_omega_ability_2",
@@ -460,7 +460,7 @@ ANIMUS_REGISTRY = {
             },
             "ultima": {
                 "name": "Pillar13 Ultima",
-                "description": "Placeholder — awaiting pillar definition.",
+                "description": "Placeholder ï¿½ awaiting pillar definition.",
                 "abilities": [
                     "p13_ultima_ability_1",
                     "p13_ultima_ability_2",
@@ -469,7 +469,7 @@ ANIMUS_REGISTRY = {
             },
             "eternium": {
                 "name": "Pillar13 Eternium",
-                "description": "Placeholder — awaiting pillar definition.",
+                "description": "Placeholder ï¿½ awaiting pillar definition.",
                 "abilities": [
                     "p13_eternium_ability_1",
                     "p13_eternium_ability_2",
@@ -479,7 +479,7 @@ ANIMUS_REGISTRY = {
         },
     },
 
-    # ===== 14. PILLAR14 — [Placeholder] =====
+    # ===== 14. PILLAR14 ï¿½ [Placeholder] =====
     "Pillar14": {
         "virtue": "TBD",
         "sin": "TBD",
@@ -487,7 +487,7 @@ ANIMUS_REGISTRY = {
         "forms": {
             "omega": {
                 "name": "Pillar14 Omega",
-                "description": "Placeholder — awaiting pillar definition.",
+                "description": "Placeholder ï¿½ awaiting pillar definition.",
                 "abilities": [
                     "p14_omega_ability_1",
                     "p14_omega_ability_2",
@@ -496,7 +496,7 @@ ANIMUS_REGISTRY = {
             },
             "ultima": {
                 "name": "Pillar14 Ultima",
-                "description": "Placeholder — awaiting pillar definition.",
+                "description": "Placeholder ï¿½ awaiting pillar definition.",
                 "abilities": [
                     "p14_ultima_ability_1",
                     "p14_ultima_ability_2",
@@ -505,7 +505,7 @@ ANIMUS_REGISTRY = {
             },
             "eternium": {
                 "name": "Pillar14 Eternium",
-                "description": "Placeholder — awaiting pillar definition.",
+                "description": "Placeholder ï¿½ awaiting pillar definition.",
                 "abilities": [
                     "p14_eternium_ability_1",
                     "p14_eternium_ability_2",
@@ -535,7 +535,7 @@ def get_form(pillar_name, form_name):
         form_name:   "omega", "ultima", or "eternium"
 
     Returns:
-        dict with name, description, abilities — or None.
+        dict with name, description, abilities ï¿½ or None.
     """
     pillar = ANIMUS_REGISTRY.get(pillar_name)
     if pillar is None:
@@ -585,3 +585,25 @@ def get_pillars_by_mentor(mentor_name):
         name for name, entry in ANIMUS_REGISTRY.items()
         if entry.get("mentor") == mentor_name
     ]
+
+
+# -----------------------------
+# Convenience Aliases
+# -----------------------------
+
+def get_animus_forms(pillar_name):
+    """
+    Return all three forms (omega, ultima, eternium) for a pillar.
+
+    Returns:
+        dict with 'omega', 'ultima', 'eternium' keys, or None.
+    """
+    pillar = ANIMUS_REGISTRY.get(pillar_name)
+    if pillar is None:
+        return None
+    return pillar.get("forms")
+
+
+def get_animus_mentor(pillar_name):
+    """Return the mentor name for a pillar, or None."""
+    return get_mentor(pillar_name)

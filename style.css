@@ -1,0 +1,217 @@
+/* =============================================
+   Eternius — Game Canvas Styles
+   Cyberpunk / neon aesthetic:
+   pinks · purples · cyans
+   ============================================= */
+
+/* ── Orbit Hero ──────────────────────────────── */
+.orbit-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 340px;
+  padding: 4rem 0 3rem;
+  overflow: hidden;
+}
+
+.orbit-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 50%,
+      rgba(255, 0, 200, 0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 80% 20%,
+      rgba(0, 212, 255, 0.1) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.orbit-title {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 900;
+  text-align: center;
+  background: linear-gradient(135deg, #ff00cc, #7c5cfc, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: .04em;
+  margin-bottom: .5rem;
+  z-index: 1;
+}
+
+.orbit-sub {
+  color: #8e90b4;
+  font-size: .95rem;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 2rem;
+}
+
+/* Tetrahedral Primal Orbit Ring */
+.orbit-ring {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin: 0 auto;
+}
+
+.orbit-ring .orbit-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff00cc 0%, #7c5cfc 60%, transparent 100%);
+  box-shadow: 0 0 24px 8px rgba(255, 0, 204, 0.5),
+              0 0 60px 20px rgba(124, 92, 252, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .65rem;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  letter-spacing: .05em;
+  z-index: 2;
+}
+
+.orbit-node {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-align: center;
+  cursor: default;
+  animation: orbit-pulse 3s ease-in-out infinite;
+}
+
+.orbit-node:nth-child(2) {
+  top: 10px; left: 50%; transform: translateX(-50%);
+  background: rgba(255, 0, 204, 0.2);
+  border: 2px solid #ff00cc;
+  color: #ff00cc;
+  box-shadow: 0 0 14px 4px rgba(255, 0, 204, 0.4);
+  animation-delay: 0s;
+}
+
+.orbit-node:nth-child(3) {
+  top: 50%; right: 8px; transform: translateY(-50%);
+  background: rgba(0, 212, 255, 0.2);
+  border: 2px solid #00d4ff;
+  color: #00d4ff;
+  box-shadow: 0 0 14px 4px rgba(0, 212, 255, 0.4);
+  animation-delay: .75s;
+}
+
+.orbit-node:nth-child(4) {
+  bottom: 10px; left: 50%; transform: translateX(-50%);
+  background: rgba(124, 92, 252, 0.2);
+  border: 2px solid #7c5cfc;
+  color: #c0aaff;
+  box-shadow: 0 0 14px 4px rgba(124, 92, 252, 0.4);
+  animation-delay: 1.5s;
+}
+
+.orbit-node:nth-child(5) {
+  top: 50%; left: 8px; transform: translateY(-50%);
+  background: rgba(247, 201, 72, 0.15);
+  border: 2px solid #f7c948;
+  color: #f7c948;
+  box-shadow: 0 0 14px 4px rgba(247, 201, 72, 0.3);
+  animation-delay: 2.25s;
+}
+
+@keyframes orbit-pulse {
+  0%, 100% { box-shadow: 0 0 14px 4px currentColor; opacity: 1; }
+  50%       { box-shadow: 0 0 28px 10px currentColor; opacity: .8; }
+}
+
+/* ── Game Section ────────────────────────────── */
+#eternius-game {
+  padding: 4rem 0;
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.game-header h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 900;
+  background: linear-gradient(135deg, #ff00cc, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.game-header p {
+  color: #8e90b4;
+  font-size: .9rem;
+  margin-top: .4rem;
+}
+
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#eternius-canvas {
+  border: 2px solid rgba(124, 92, 252, 0.5);
+  border-radius: 12px;
+  box-shadow:
+    0 0 20px rgba(255, 0, 204, 0.3),
+    0 0 60px rgba(124, 92, 252, 0.15);
+  display: block;
+  cursor: crosshair;
+  max-width: 100%;
+  background: #07080f;
+}
+
+.game-hud {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: .85rem;
+  color: #8e90b4;
+}
+
+.game-hud span {
+  background: rgba(13, 16, 33, 0.9);
+  border: 1px solid rgba(124, 92, 252, 0.3);
+  border-radius: 8px;
+  padding: .3rem .9rem;
+}
+
+.game-hud .hud-label {
+  color: #7c5cfc;
+  font-weight: 700;
+  margin-right: .3rem;
+}
+
+.game-controls-hint {
+  font-size: .78rem;
+  color: #555880;
+  text-align: center;
+}
+
+/* Responsive canvas sizing */
+@media (max-width: 860px) {
+  #eternius-canvas {
+    width: 100%;
+    height: auto;
+  }
+}

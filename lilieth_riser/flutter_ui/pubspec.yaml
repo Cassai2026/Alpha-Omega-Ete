@@ -1,0 +1,30 @@
+name: lilieth_riser_ui
+description: >
+  LILIETH_RISER — Sovereign Sampling & Performance Engine UI
+  "The Black Canvas" — zero clutter, pure waveform and touch-sensitive pads.
+version: 1.0.47+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  ffi: ^2.1.3                      # C++ engine bridge
+  provider: ^6.1.2                  # State management
+  web_socket_channel: ^3.0.1        # Master/Client sync
+  path_provider: ^2.1.4             # Ledger file storage
+  file_picker: ^8.1.4               # Load audio files ("Apples")
+  just_audio: ^0.9.40               # Audio playback fallback layer
+  permission_handler: ^11.3.1       # Microphone / storage permissions
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: false        # Sovereign design system — no Material chrome
+  assets:
+    - assets/fonts/
+    - assets/icons/
